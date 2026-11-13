@@ -50,22 +50,6 @@ Escape the Geese is a short project, so we use a simple register with Low, Mediu
 | <span class="lvl lvl-M">M</span> Medium | Plausible | Noticeable delay, or lower quality deliverables |
 | <span class="lvl lvl-H">H</span> High | Very likely to happen | Serious delay, or failure to meet the project's requirements |
 
-## Risk register {#register}
-
-| ID | Category | Risk | Likelihood | Severity | Mitigation | Owner |
-|---|---|---|---|---|---|---|
-| R_1 | Personnel | A family bereavement forces a team member to take leave, leaving work unfinished | <span class="lvl lvl-M">M</span> | <span class="lvl lvl-M">M</span> | Every task is assigned to at least two members (a higher "bus factor") | Louis |
-| R_2 | Personnel | Illness means one or more members are off sick | <span class="lvl lvl-M">M</span> | <span class="lvl lvl-M">M</span> | Every task has a second member; ill members join meetings online | Louis |
-| R_3 | Personnel | A member does not complete their assigned task | <span class="lvl lvl-H">H</span> | <span class="lvl lvl-L">L</span> | More than one person is responsible for each task, so others can cover | Louis |
-| R_4 | Technical | Code is lost, for example through a corrupted file | <span class="lvl lvl-M">M</span> | <span class="lvl lvl-H">H</span> | Commit often and push to GitHub, so the code has several backups | Henrik |
-| R_5 | Technical | Merge conflicts when working in a team | <span class="lvl lvl-H">H</span> | <span class="lvl lvl-M">M</span> | Branches, small commits, and agreeing who edits which module | Tim |
-| R_6 | Technical | Working with an unfamiliar library | <span class="lvl lvl-H">H</span> | <span class="lvl lvl-L">L</span> | Prototype early, read the documentation and practise | Henrik |
-| R_7 | Technical | The game crashes when run from the JAR | <span class="lvl lvl-M">M</span> | <span class="lvl lvl-M">M</span> | Test throughout development and optimise any bottlenecks | Tim |
-| R_8 | Planning | Missing the 16 November deadline | <span class="lvl lvl-L">L</span> | <span class="lvl lvl-H">H</span> | A submission "chain of command", so a backup person submits if needed | Sruthi |
-| R_9 | Planning | Underestimating the time for key features, so implementation is rushed | <span class="lvl lvl-M">M</span> | <span class="lvl lvl-H">H</span> | Plan pessimistically and leave spare time before the deadline | Sruthi |
-| R_10 | Product | Slow start-up or low frame rate caused by too many geese | <span class="lvl lvl-M">M</span> | <span class="lvl lvl-M">M</span> | Cap the number of geese and test performance regularly | June |
-| R_11 | Product | Third-party assets are not licensed for our use | <span class="lvl lvl-L">L</span> | <span class="lvl lvl-H">H</span> | Keep an asset log and only use assets whose licence allows it | June |
-
 ## Risk matrix {#matrix}
 
 Where each risk sits by likelihood and severity. Risks towards the top right need the most attention.
