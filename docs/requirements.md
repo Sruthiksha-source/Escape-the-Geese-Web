@@ -70,16 +70,6 @@ The constraints, functional and quality requirements, with their fit criteria, a
 |---|---|---|---|
 | Meeting 1 | 9 October 2026 | Clarifying the product brief: platform, gameplay rules, accessibility and scope | [PDF]({{ '/assets/Customer%20Meeting%201.pdf' | relative_url }}) |
 
-### Meeting 1: key outcomes (9 October 2026) {#meeting-1}
-
-- **Platform:** Windows, macOS and Linux desktops, in a top-down 2D view (CR_PLATFORMS, CR_VIEW)
-- **Technology:** Java with a stable, well-documented engine; all licences recorded (CR_JAVA, CR_ENGINE, CR_LICENCE)
-- **Gameplay:** non-violent wave survival with an exhaustion meter instead of health; win by clearing the waves, lose when the timer ends or the meter fills (CR_PEACE, FR_EXHAUSTION_METER, FR_WIN, FR_LOSE)
-- **Items:** different item types, and misusing a distraction item enrages a goose (FR_ITEM_TYPES, FR_ITEM_MISUSE)
-- **Accessibility:** important information through at least two of sound, visuals and text, plus pause, volume and full screen (UR_ACCESSIBILITY, FR_EVENT_AUDIO, FR_EVENT_VISUAL)
-- **Performance:** loads within a couple of seconds on an average computer (QR_STARTUP)
-- **Scope:** a tutorial is required (FR_TUTORIAL); saving progress, leaderboards and storing player data are out of scope
-
 The questions Q1 to Q16 referred to in Req1 are listed in full in the meeting notes:
 
 <object class="req-pdf short" data="{{ '/assets/Customer%20Meeting%201.pdf' | relative_url }}" type="application/pdf">
