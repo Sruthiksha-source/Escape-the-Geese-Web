@@ -2,23 +2,6 @@
 layout: page
 title: Architecture
 ---
----
-layout: page
-title: Architecture
----
-
-<style>
-  .arch-btns a { display: inline-block; margin: 0 .5rem .5rem 0; padding: .45rem .9rem; border-radius: 6px;
-                 background: #1f3a5f; color: #fff !important; text-decoration: none; font-size: .95rem; }
-  .arch-btns a.alt { background: #eef2f7; color: #1f3a5f !important; border: 1px solid #c9d4e2; }
-  .arch-fig { margin: 1.25rem 0 2rem; }
-  .arch-fig img { max-width: 100%; height: auto; border: 1px solid #d0d7de; border-radius: 6px; }
-  .arch-fig figcaption { font-size: .9rem; color: #57606a; margin-top: .4rem; }
-  .arch-note { background: #f6f8fa; border-left: 4px solid #7fa3cf; padding: .6rem .9rem; margin: .8rem 0 1.2rem; }
-  .arch-old { border-left-color: #d9a3a3; }
-  .arch-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; }
-  .arch-pdf { width: 100%; height: 800px; border: 1px solid #d0d7de; border-radius: 6px; }
-</style>
 
 The architecture of Escape the Geese is described in our Assessment 1 report, **Arch1.pdf**. This page holds every diagram at full size, together with the earlier versions that show how the design evolved. All diagrams use UML 2 and every class name matches the code.
 
