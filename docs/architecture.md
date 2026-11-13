@@ -6,12 +6,12 @@ title: Architecture
 The architecture of Escape the Geese is described in our Assessment 1 report, **Arch1.pdf**. This page holds every diagram at full size, together with the earlier versions that show how the design evolved. All diagrams use UML 2 and every class name matches the code.
 
 <p class="arch-btns">
-  <a href="{{ '/assets/pdf/Arch1.pdf' | relative_url }}" download>Download Arch1.pdf</a>
+  <a href="{{ '/assets/Arch1.pdf' | relative_url }}" download>Download Arch1.pdf</a>
   <a class="alt" href="{{ '/assets/arch/class-diagram-v2.pdf' | relative_url }}">Final class diagram (PDF)</a>
   <a class="alt" href="#evidence">Design evolution</a>
 </p>
 
-<object class="arch-pdf" data="{{ '/assets/pdf/Arch1.pdf' | relative_url }}" type="application/pdf">
+<object class="arch-pdf" data="{{ '/assets/Arch1.pdf' | relative_url }}" type="application/pdf">
   <p><a href="{{ '/assets/pdf/Arch1.pdf' | relative_url }}">Open Arch1.pdf</a>.</p>
 </object>
 
