@@ -12,7 +12,7 @@ The architecture of Escape the Geese is described in our Assessment 1 report, **
 </p>
 
 <object class="arch-pdf" data="{{ '/assets/pdf/Arch1.pdf' | relative_url }}" type="application/pdf">
-  <p>Your browser can't display the PDF here. <a href="{{ '/assets/pdf/Arch1.pdf' | relative_url }}">Open Arch1.pdf</a>.</p>
+  <p><a href="{{ '/assets/pdf/Arch1.pdf' | relative_url }}">Open Arch1.pdf</a>.</p>
 </object>
 
 **On this page:** [Final class diagram](#class-v2) · [Behavioural diagrams](#seq-v2) · [CRC cards v2](#crc-v2) · [Design evolution](#evidence) · [Diagram sources](#sources)
@@ -20,7 +20,7 @@ The architecture of Escape the Geese is described in our Assessment 1 report, **
 ## Final class diagram (version 2, 12 November 2026) {#class-v2}
 
 <p><a href="{{ '/assets/arch/class-diagram-v2.pdf' | relative_url }}">Open full size (PDF, zoomable)</a> ·
-   <a href="YOUR-LUCIDCHART-VIEW-LINK">Editable version in Lucidchart</a></p>
+   
 
 <figure class="arch-fig">
   <a href="{{ '/assets/arch/v2/class-diagram-v2.svg' | relative_url }}"><img src="{{ '/assets/arch/v2/class-diagram-v2.png' | relative_url }}" alt="Final class diagram of Escape the Geese, grouped into presentation, logic and support layers"></a>
