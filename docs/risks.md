@@ -17,11 +17,11 @@ title: Risks
   .lvl-H { background: #fbe1df; color: #8a1f17; } .lvl-M { background: #fdf3d8; color: #7a5600; } .lvl-L { background: #e6f4e4; color: #1e5c1a; }
 </style>
 
-Our approach to risk management and our risk register are set out in our Assessment 1 report, **Risk1.pdf**. This page holds the report, the full register and a summary of where each risk sits.
+Our approach to risk management and our risk register are set out in our Assessment 1 report, **Risk1.pdf**. This page holds the report and a summary of where each risk sits. The full risk register is in Risk1.pdf.
 
 <p class="risk-btns">
   <a href="{{ '/assets/Risk1.pdf' | relative_url }}" download>Download Risk1.pdf</a>
-  <a class="alt" href="#register">Risk register</a>
+  <a class="alt" href="#process">Our process</a>
   <a class="alt" href="#matrix">Risk matrix</a>
 </p>
 
@@ -29,7 +29,7 @@ Our approach to risk management and our risk register are set out in our Assessm
   <p>Your browser can't show the PDF here. <a href="{{ '/assets/Risk1.pdf' | relative_url }}">Open Risk1.pdf</a>.</p>
 </object>
 
-**On this page:** [Our process](#process) · [Rating scale](#scale) · [Risk register](#register) · [Risk matrix](#matrix) · [Monitoring](#monitoring)
+**On this page:** [Our process](#process) · [Rating scale](#scale) · [Risk matrix](#matrix) · [Monitoring](#monitoring)
 
 ## Our process {#process}
 
@@ -52,7 +52,7 @@ Escape the Geese is a short project, so we use a simple register with Low, Mediu
 
 ## Risk matrix {#matrix}
 
-Where each risk sits by likelihood and severity. Risks towards the top right need the most attention.
+Where each risk in the register (see Risk1.pdf) sits by likelihood and severity. Risks towards the top right need the most attention.
 
 <table class="risk-matrix">
   <tr><th>Likelihood ↓ / Severity →</th><th>Low</th><th>Medium</th><th>High</th></tr>
