@@ -1,0 +1,28 @@
+@startuml
+!include _style.iuml
+title Figure 7 (v1). Goose behaviour and item effects sequence
+caption Version 1 · 30 October 2026 · superseded by version 2 (12 November 2026). Redrawn from the original PlantUML; content unchanged.
+participant Goose
+participant Player
+participant Item
+participant Score
+Goose -> Goose : pathfindToPlayer()
+Goose -> Player : getLocation()
+Player --> Goose : result
+Goose -> Player : getHealth()
+Player --> Goose : result
+Goose -> Goose : decrementHealth()
+Player -> Item : applyToGeese()
+Item -> Goose : disperseGoose()
+Goose -> Item : getEffectType()
+alt if item harms geese
+  Goose -> Goose : getGooseHealth
+  Goose -> Item : getStrength()
+end
+Goose -> Score : getPercentDispersed
+Score --> Goose : GeeseDisperesed
+Goose -> Item : getStrength()
+Item --> Goose : result
+Goose -> Item : getDuration()
+Item --> Goose : result
+@enduml

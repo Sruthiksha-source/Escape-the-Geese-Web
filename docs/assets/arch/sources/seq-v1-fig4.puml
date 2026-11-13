@@ -1,0 +1,37 @@
+@startuml
+!include _style.iuml
+title Figure 4 (v1). Player movement and item usage sequence
+caption Version 1 · 30 October 2026 · superseded by version 2 (12 November 2026). Redrawn from the original PlantUML; content unchanged.
+actor User
+participant Player
+participant Game
+participant Item
+participant Score
+User -> Player : moves player up
+Player -> Player : moveUp()
+alt direction == moves down
+  User -> Player : moves player down
+  Player -> Player : moveDown()
+end
+alt direction == left
+  User -> Player : moves player left
+  Player -> Player : moveLeft()
+end
+alt direction == right
+  User -> Player : moves player right
+  Player -> Player : moveRight()
+end
+Player -> Game : checkForEvents()
+User -> Player : picks up an item
+Player -> Item : getEffectType()
+Item --> Player : result
+Player -> Item : getStrength()
+Item --> Player : result
+User -> Player : Uses an item
+Player -> Item : applyToPlayer()
+Player -> Item : applyToGeese()
+Player -> Score : incrementItemsUsed()
+Player -> Player : increaseScore()
+Player -> Score : applyItemBonus()
+Player -> Game : isGameOver()
+@enduml

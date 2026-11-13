@@ -1,0 +1,42 @@
+@startuml
+!include _style.iuml
+title Figure 2 (v1). Score and Event class diagrams
+caption Version 1 · 30 October 2026 · superseded by version 2 (12 November 2026). Redrawn from the original PlantUML; content unchanged.
+class Score {
+  -currentScore: int
+  -geeseDispersed: int
+  -totalGeese: int
+  -itemsUsed: int
+  -scoreMultiplier: double
+  +getScore(): int
+  +addDispersalPoints(in int geeseCount, in int timeElapsed): void
+  +calculateTimeBonus(in int timeElapsed): int
+  +applyItemBonus(in Item item): void
+  +setMultiplier(in double multiplier): void
+  +incrementItemsUsed(): void
+  +getItemsUsed(): int
+  +getPercentDispersed(): double
+  +isAllDispersed(): boolean
+}
+class Event {
+  -name: String
+  -isPositive: boolean
+  -isTriggered: boolean
+  -triggerLocation: int[]
+  -triggerRadius: int
+  -duration: int
+  -soundFile: String
+  -scoreModifier: double
+  -spawnableItems: List<Item>
+  +trigger(): void
+  +isInTriggerRange(in int[] playerLocation): boolean
+  +isActive(): boolean
+  +affectGeese(in List<Goose> geese): void
+  +affectPlayer(in Player player): void
+  +spawnItems(): List<Item>
+  +modifyScore(in Score score): void
+  +playSound(): void
+  +endEvent(): void
+}
+Score -[hidden]right- Event
+@enduml

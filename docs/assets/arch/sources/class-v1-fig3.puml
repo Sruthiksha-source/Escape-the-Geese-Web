@@ -1,0 +1,29 @@
+@startuml
+!include _style.iuml
+title Figure 3 (v1). Goose and Item class diagrams
+caption Version 1 · 30 October 2026 · superseded by version 2 (12 November 2026). Redrawn from the original PlantUML; content unchanged.
+class Goose {
+  -gooseHealth: int
+  -gooseSpeed: int
+  -goosePosition: int[]
+  +getGooseHealth(): int
+  +getGooseSpeed(): int
+  +getPosition(): int[]
+  +pathfindToPlayer(playerLocation: int[]): void
+  +disperseGoose(): void
+  +decrementHealth(): int
+}
+class Item {
+  -name: String
+  -effectType: String
+  -strength: double
+  -duration: int
+  +getName(): String
+  +getEffectType(): String
+  +getStrength(): double
+  +getDuration(): int
+  +applyToGeese(geese: List<Goose>): void
+  +applyToPlayer(player: Player): void
+}
+Goose -[hidden]right- Item
+@enduml

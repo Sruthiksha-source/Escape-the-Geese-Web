@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="437px" preserveAspectRatio="none" style="width:721px;height:437px;" version="1.1" viewBox="0 0 721 437" width="721px" zoomAndPan="magnify"><defs/><g><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="358" x="177" y="23.5625">Figure 5 (v1). Goose dispersal and scoring sequence</text><text fill="#7A2E2E" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="706" x="3" y="424.04">Version 1 · 30 October 2026 · superseded by version 2 (12 November 2026). Redrawn from the original PlantUML; content unchanged.</text><rect fill="#FFFFFF" height="60.459" style="stroke: #000000; stroke-width: 2.0;" width="198" x="111.5" y="303.9854"/><line style="stroke: #181818; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="147.5" x2="147.5" y1="65.8789" y2="381.4443"/><line style="stroke: #181818; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="276" x2="276" y1="65.8789" y2="381.4443"/><line style="stroke: #181818; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="387.5" x2="387.5" y1="65.8789" y2="381.4443"/><rect fill="#E2E2F0" height="30.9395" style="stroke: #181818; stroke-width: 1.5;" width="52" x="121.5" y="33.9395"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="38" x="128.5" y="54.502">Game</text><rect fill="#E2E2F0" height="30.9395" style="stroke: #181818; stroke-width: 1.5;" width="52" x="121.5" y="380.4443"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="38" x="128.5" y="401.0068">Game</text><rect fill="#E2E2F0" height="30.9395" style="stroke: #181818; stroke-width: 1.5;" width="55" x="249" y="33.9395"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="41" x="256" y="54.502">Goose</text><rect fill="#E2E2F0" height="30.9395" style="stroke: #181818; stroke-width: 1.5;" width="55" x="249" y="380.4443"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="41" x="256" y="401.0068">Goose</text><rect fill="#E2E2F0" height="30.9395" style="stroke: #181818; stroke-width: 1.5;" width="52" x="361.5" y="33.9395"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="38" x="368.5" y="54.502">Score</text><rect fill="#E2E2F0" height="30.9395" style="stroke: #181818; stroke-width: 1.5;" width="52" x="361.5" y="380.4443"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="38" x="368.5" y="401.0068">Score</text><polygon fill="#181818" points="264.5,93.6084,274.5,97.6084,264.5,101.6084,268.5,97.6084" style="stroke: #181818; stroke-width: 1.0;"/><line style="stroke: #181818; stroke-width: 1.0;" x1="147.5" x2="270.5" y1="97.6084" y2="97.6084"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="105" x="154.5" y="92.4727">disperseGoose()</text><polygon fill="#181818" points="375.5,123.3379,385.5,127.3379,375.5,131.3379,379.5,127.3379" style="stroke: #181818; stroke-width: 1.0;"/><line style="stroke: #181818; stroke-width: 1.0;" x1="147.5" x2="381.5" y1="127.3379" y2="127.3379"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="216" x="154.5" y="122.2021">addDispersalPoints(1, timeElapsed)</text><line style="stroke: #181818; stroke-width: 1.0;" x1="387.5" x2="429.5" y1="157.0674" y2="157.0674"/><line style="stroke: #181818; stroke-width: 1.0;" x1="429.5" x2="429.5" y1="157.0674" y2="170.0674"/><line style="stroke: #181818; stroke-width: 1.0;" x1="388.5" x2="429.5" y1="170.0674" y2="170.0674"/><polygon fill="#181818" points="398.5,166.0674,388.5,170.0674,398.5,174.0674,394.5,170.0674" style="stroke: #181818; stroke-width: 1.0;"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="209" x="394.5" y="151.9316">calculateTimeBonus(timeElapsed)</text><polygon fill="#181818" points="375.5,195.7969,385.5,199.7969,375.5,203.7969,379.5,199.7969" style="stroke: #181818; stroke-width: 1.0;"/><line style="stroke: #181818; stroke-width: 1.0;" x1="147.5" x2="381.5" y1="199.7969" y2="199.7969"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="66" x="154.5" y="194.6611">getScore()</text><polygon fill="#181818" points="158.5,225.5264,148.5,229.5264,158.5,233.5264,154.5,229.5264" style="stroke: #181818; stroke-width: 1.0;"/><line style="stroke: #181818; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="152.5" x2="386.5" y1="229.5264" y2="229.5264"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="81" x="164.5" y="224.3906">currentScore</text><polygon fill="#181818" points="375.5,255.2559,385.5,259.2559,375.5,263.2559,379.5,259.2559" style="stroke: #181818; stroke-width: 1.0;"/><line style="stroke: #181818; stroke-width: 1.0;" x1="147.5" x2="381.5" y1="259.2559" y2="259.2559"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="98" x="154.5" y="254.1201">isAllDispersed()</text><polygon fill="#181818" points="158.5,284.9854,148.5,288.9854,158.5,292.9854,154.5,288.9854" style="stroke: #181818; stroke-width: 1.0;"/><line style="stroke: #181818; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="152.5" x2="386.5" y1="288.9854" y2="288.9854"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="35" x="164.5" y="283.8496">result</text><path d="M111.5,303.9854 L173.5,303.9854 L173.5,310.9854 L163.5,320.9854 L111.5,320.9854 L111.5,303.9854 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 1.0;"/><rect fill="none" height="60.459" style="stroke: #000000; stroke-width: 2.0;" width="198" x="111.5" y="303.9854"/><text fill="#000000" font-family="Arial" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="17" x="126.5" y="317.5791">alt</text><text fill="#000000" font-family="Arial" font-size="11" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="116" x="188.5" y="316.6416">[All geese dispersed]</text><line style="stroke: #181818; stroke-width: 1.0;" x1="147.5" x2="189.5" y1="343.4443" y2="343.4443"/><line style="stroke: #181818; stroke-width: 1.0;" x1="189.5" x2="189.5" y1="343.4443" y2="356.4443"/><line style="stroke: #181818; stroke-width: 1.0;" x1="148.5" x2="189.5" y1="356.4443" y2="356.4443"/><polygon fill="#181818" points="158.5,352.4443,148.5,356.4443,158.5,360.4443,154.5,356.4443" style="stroke: #181818; stroke-width: 1.0;"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="70" x="154.5" y="338.3086">endGame()</text><!--
+@startuml
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam classAttributeIconSize 0
+skinparam titleFontSize 15
+skinparam titleFontStyle bold
+skinparam captionFontSize 11
+skinparam captionFontColor #7a2e2e
+skinparam class {
+  BackgroundColor #F1F1F1
+  BorderColor #181818
+  ArrowColor #181818
+}
+skinparam stereotypeCBackgroundColor #ADD1B2
+skinparam sequence {
+  ParticipantBackgroundColor #E2E2F0
+  ParticipantBorderColor #181818
+  ActorBackgroundColor #E2E2F0
+  ActorBorderColor #181818
+  ArrowColor #181818
+  LifeLineBorderColor #181818
+  LifeLineBackgroundColor #FFFFFF
+  GroupBorderColor #000000
+  GroupBackgroundColor #EEEEEE
+}
+skinparam noteBackgroundColor #FEFFDD
+skinparam noteBorderColor #181818
+title Figure 5 (v1). Goose dispersal and scoring sequence
+caption Version 1 · 30 October 2026 · superseded by version 2 (12 November 2026). Redrawn from the original PlantUML; content unchanged.
+participant Game
+participant Goose
+participant Score
+Game -> Goose : disperseGoose()
+Game -> Score : addDispersalPoints(1, timeElapsed)
+Score -> Score : calculateTimeBonus(timeElapsed)
+Game -> Score : getScore()
+Score - -> Game : currentScore
+Game -> Score : isAllDispersed()
+Score - -> Game : result
+alt All geese dispersed
+  Game -> Game : endGame()
+end
+@enduml
+
+PlantUML version 1.2019.06(Fri May 24 18:10:25 BST 2019)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 21.0.12.1+1-1-24.04.4-Ubuntu
+Operating System: Linux
+OS Version: 6.18.44-fc-v445
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

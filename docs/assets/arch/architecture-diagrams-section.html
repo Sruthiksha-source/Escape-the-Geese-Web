@@ -1,0 +1,79 @@
+<!-- ============================================================
+     Architecture page: diagrams and design evidence
+     Paste below the embedded Arch1.pdf on architecture.html (or architecture.md).
+     Upload the whole "arch" folder to docs/assets/arch/ so the paths below work.
+     The id="..." anchors must stay exactly as written: Arch1.pdf links to them.
+     ============================================================ -->
+<style>
+  .arch-fig { margin: 1.25rem 0 2rem; }
+  .arch-fig img { max-width: 100%; height: auto; border: 1px solid #d0d7de; border-radius: 6px; }
+  .arch-fig figcaption { font-size: 0.9rem; color: #57606a; margin-top: 0.4rem; }
+  .arch-note { background: #f6f8fa; border-left: 4px solid #7fa3cf; padding: 0.6rem 0.9rem; margin: 0.8rem 0 1.2rem; }
+  .arch-old  { border-left-color: #d9a3a3; }
+  .arch-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1rem; }
+</style>
+
+<h2 id="class-v2">Final class diagram (version 2, 12 November 2026)</h2>
+<p><a href="assets/arch/class-diagram-v2.pdf">Open full size (PDF, zoomable)</a> ·
+   <a href="YOUR-LUCIDCHART-VIEW-LINK">Editable version in Lucidchart</a></p>
+<figure class="arch-fig">
+  <a href="assets/arch/v2/class-diagram-v2.svg"><img src="assets/arch/v2/class-diagram-v2.png" alt="Final class diagram of Escape the Geese, grouped into presentation, logic and support layers"></a>
+  <figcaption>Figure 1. Final class diagram. Blue = presentation, orange = logic, green = support. HUD's read-only links to GameTimer, Score, Inventory, ExhaustionMeter and WaveManager are omitted for clarity.</figcaption>
+</figure>
+
+<h2 id="seq-v2">Final behavioural diagrams (12 November 2026)</h2>
+<figure class="arch-fig">
+  <a href="assets/arch/v2/seq-player-item.svg"><img src="assets/arch/v2/seq-player-item.png" alt="Sequence diagram: player uses an item and clears a wave"></a>
+  <figcaption>Figure 2. Player uses an item and clears a wave. Requirements: FR_ITEM_DISPERSE, FR_ITEM_TYPES, FR_ITEM_MISUSE, FR_SCORE_ITEMS, FR_SCORE_SPEED, FR_GEESE_WAVES, FR_WAVE_COUNTDOWN.</figcaption>
+</figure>
+<figure class="arch-fig">
+  <a href="assets/arch/v2/seq-gamescreen-frame.svg"><img src="assets/arch/v2/seq-gamescreen-frame.png" alt="Sequence diagram: one GameScreen frame"></a>
+  <figcaption>Figure 3. One GameScreen frame: pause, events, and the win and loss checks. Requirements: FR_PAUSE, FR_TIMER, FR_EXHAUSTION_METER, FR_EVENT_AUDIO, FR_EVENT_VISUAL, FR_WIN, FR_LOSE.</figcaption>
+</figure>
+<figure class="arch-fig">
+  <a href="assets/arch/v2/state-goose.svg"><img src="assets/arch/v2/state-goose.png" alt="State machine for Goose" style="max-width:420px"></a>
+  <figcaption>Figure 4. Goose state machine. Geese are distracted, enraged or dispersed, never harmed. Requirements: FR_ITEM_DISPERSE, FR_ITEM_MISUSE, CR_PEACE.</figcaption>
+</figure>
+
+<h2 id="crc-v2">CRC cards, version 2 (12 November 2026)</h2>
+<figure class="arch-fig">
+  <a href="assets/arch/v2/crc-v2.svg"><img src="assets/arch/v2/crc-v2.png" alt="17 CRC cards grouped by layer"></a>
+  <figcaption>17 classes in three layers. Each responsibility names the class it works with; these collaborations became the relationships in Figure 1.</figcaption>
+</figure>
+
+<h2 id="evidence">Design evolution</h2>
+<p>Our architecture went through three versions: CRC cards (October), first class and sequence diagrams (30 October), and the final design (12 November). The earlier versions are kept below, unchanged in content, as evidence of how the design developed. Section 3.2 of Arch1.pdf explains each change and the requirement behind it.</p>
+
+<h3 id="crc-v1">CRC cards, version 1 (October 2026)</h3>
+<div class="arch-note arch-old"><strong>Superseded.</strong> Game held eight responsibilities, Player asked "Health bar ?", and Score ended the game at 100% of geese dispersed. Version 2 split Game into Main and four screens, replaced health with an ExhaustionMeter, and moved the win to "every wave cleared".</div>
+<figure class="arch-fig">
+  <a href="assets/arch/v1/crc-v1.svg"><img src="assets/arch/v1/crc-v1.png" alt="Six original CRC cards"></a>
+</figure>
+
+<h3 id="class-v1">Class diagrams, version 1 (30 October 2026)</h3>
+<div class="arch-note arch-old"><strong>Superseded on 12 November.</strong> Player and Goose had health and Goose lost health from items; one Game class ran timer, waves, events and the win check; classes had no relationships drawn. Replaced by Figure 1 above.</div>
+<div class="arch-grid">
+  <figure class="arch-fig"><a href="assets/arch/v1/class-v1-fig1.svg"><img src="assets/arch/v1/class-v1-fig1.png" alt="v1 Game and Player classes"></a><figcaption>Figure 1 (v1). Game and Player</figcaption></figure>
+  <figure class="arch-fig"><a href="assets/arch/v1/class-v1-fig2.svg"><img src="assets/arch/v1/class-v1-fig2.png" alt="v1 Score and Event classes"></a><figcaption>Figure 2 (v1). Score and Event</figcaption></figure>
+  <figure class="arch-fig"><a href="assets/arch/v1/class-v1-fig3.svg"><img src="assets/arch/v1/class-v1-fig3.png" alt="v1 Goose and Item classes"></a><figcaption>Figure 3 (v1). Goose and Item</figcaption></figure>
+</div>
+
+<h3 id="seq-v1">Sequence diagrams, version 1 (30 October 2026)</h3>
+<div class="arch-note arch-old"><strong>Superseded on 12 November.</strong> Six overlapping scenarios built around the old Game class, including damage to the player and an "if item harms geese" branch. Merged into Figures 2 and 3 above, with Figure 4 added for goose behaviour.</div>
+<div class="arch-grid">
+  <figure class="arch-fig"><a href="assets/arch/v1/seq-v1-fig4.svg"><img src="assets/arch/v1/seq-v1-fig4.png" alt="v1 Player movement and item usage"></a><figcaption>Figure 4 (v1). Player movement and item usage</figcaption></figure>
+  <figure class="arch-fig"><a href="assets/arch/v1/seq-v1-fig5.svg"><img src="assets/arch/v1/seq-v1-fig5.png" alt="v1 Goose dispersal and scoring"></a><figcaption>Figure 5 (v1). Goose dispersal and scoring</figcaption></figure>
+  <figure class="arch-fig"><a href="assets/arch/v1/seq-v1-fig6.svg"><img src="assets/arch/v1/seq-v1-fig6.png" alt="v1 Event triggering and game completion"></a><figcaption>Figure 6 (v1). Event triggering and game completion</figcaption></figure>
+  <figure class="arch-fig"><a href="assets/arch/v1/seq-v1-fig7.svg"><img src="assets/arch/v1/seq-v1-fig7.png" alt="v1 Goose behaviour and item effects"></a><figcaption>Figure 7 (v1). Goose behaviour and item effects</figcaption></figure>
+  <figure class="arch-fig"><a href="assets/arch/v1/seq-v1-fig8.svg"><img src="assets/arch/v1/seq-v1-fig8.png" alt="v1 Item use and wave dispersal"></a><figcaption>Figure 8 (v1). Item use and wave dispersal</figcaption></figure>
+  <figure class="arch-fig"><a href="assets/arch/v1/seq-v1-fig9.svg"><img src="assets/arch/v1/seq-v1-fig9.png" alt="v1 Event triggering, item spawning and score modification"></a><figcaption>Figure 9 (v1). Event triggering, item spawning and score modification</figcaption></figure>
+</div>
+
+<h2 id="sources">Diagram sources</h2>
+<p>Every diagram is generated from a text file, so its history is recorded in our repository.</p>
+<ul>
+  <li>Final class diagram (Mermaid): <a href="assets/arch/sources/class-diagram-final.mmd">class-diagram-final.mmd</a></li>
+  <li>Final sequence diagrams and state machine (PlantUML): <a href="assets/arch/sources/seq-player-item.puml">seq-player-item.puml</a>, <a href="assets/arch/sources/seq-gamescreen-frame.puml">seq-gamescreen-frame.puml</a>, <a href="assets/arch/sources/state-goose.puml">state-goose.puml</a></li>
+  <li>Version 1 diagrams (PlantUML): class-v1-fig1 to fig3 and seq-v1-fig4 to fig9 in <code>assets/arch/sources/</code></li>
+  <li>Change history: <a href="YOUR-REPO-LINK/commits/main/docs/assets/arch">commit history for these files</a></li>
+</ul>

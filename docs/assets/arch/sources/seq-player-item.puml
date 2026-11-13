@@ -1,0 +1,52 @@
+@startuml seq-player-item
+title Fig 2. Player uses an item and clears a wave
+skinparam shadowing false
+skinparam sequenceMessageAlign left
+skinparam ParticipantBackgroundColor #EEF4FB
+skinparam ParticipantBorderColor #1f3a5f
+autonumber
+actor User
+participant GameScreen
+participant Player
+participant Inventory
+participant "Item\n(Breadcrumbs / Pebble)" as Item
+participant Goose
+participant Score
+participant WaveManager
+
+User -> GameScreen : presses Use key, aims at target
+GameScreen -> WaveManager : getActiveGeese()
+WaveManager --> GameScreen : geese
+GameScreen -> Player : useItem(target, geese)
+Player -> Inventory : takeSelected()
+alt inventory empty
+  Inventory --> Player : null
+  Player --> GameScreen : 0
+else item available
+  Inventory --> Player : item
+  Player -> Item : apply(target, geese)
+  alt Breadcrumbs
+    loop each goose within range
+      Item -> Goose : disperse()
+    end
+  else Pebble lands near a goose
+    Item -> Goose : distract(target)
+  else Pebble hits a goose (misuse)
+    Item -> Goose : enrage()
+  end
+  Item --> Player : dispersedCount
+  Player --> GameScreen : dispersedCount
+  GameScreen -> Score : recordItemUsed()
+  opt dispersedCount > 0
+    GameScreen -> Score : addDispersal(dispersedCount, secondsIntoWave)
+  end
+end
+
+== next frame ==
+GameScreen -> WaveManager : update(delta)
+WaveManager -> Goose : isGone()
+Goose --> WaveManager : true once off the map
+opt every goose in the wave is gone
+  WaveManager -> WaveManager : start countdown, then spawn next wave
+end
+@enduml

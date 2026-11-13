@@ -1,0 +1,29 @@
+@startuml state-goose
+title Fig 4. Goose state machine
+skinparam shadowing false
+skinparam state {
+  BackgroundColor #FFF7EE
+  BorderColor #1f3a5f
+}
+hide empty description
+
+[*] --> Active : spawned by WaveManager
+
+state Active {
+  [*] --> Chasing
+  Chasing : moves toward Player around walls
+  Chasing : fills ExhaustionMeter when within reach
+  Distracted : walks to where the pebble landed
+  Enraged : chases at higher speed
+  Chasing --> Distracted : Pebble lands nearby
+  Distracted --> Chasing : distraction ends
+  Chasing --> Enraged : Pebble hits this goose
+  Enraged --> Chasing : rage ends
+}
+
+Active --> Dispersing : Breadcrumbs land within range
+Dispersing : walks off toward the map edge
+Dispersing : blocks no one, fills nothing
+Dispersing --> Gone : reaches the map edge
+Gone --> [*] : removed by WaveManager
+@enduml

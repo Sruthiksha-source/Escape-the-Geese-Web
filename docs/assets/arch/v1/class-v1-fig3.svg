@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="241px" preserveAspectRatio="none" style="width:718px;height:241px;" version="1.1" viewBox="0 0 718 241" width="718px" zoomAndPan="magnify"><defs/><g><text fill="#000000" font-family="Arial" font-size="15" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="328" x="189" y="14.5313">Figure 3 (v1). Goose and Item class diagrams</text><!--class Goose--><rect fill="#F1F1F1" height="167.7861" id="Goose" style="stroke: #181818; stroke-width: 1.5;" width="253" x="85.5" y="32.6494"/><ellipse cx="189.75" cy="48.6494" fill="#ADD1B2" rx="11" ry="11" style="stroke: #181818; stroke-width: 1.0;"/><path d="M192.7188,54.29 Q192.1406,54.5869 191.5,54.7275 Q190.8594,54.8838 190.1563,54.8838 Q187.6563,54.8838 186.3281,53.2432 Q185.0156,51.5869 185.0156,48.4619 Q185.0156,45.3369 186.3281,43.6807 Q187.6563,42.0244 190.1563,42.0244 Q190.8594,42.0244 191.5,42.1807 Q192.1563,42.3369 192.7188,42.6338 L192.7188,45.3525 Q192.0938,44.7744 191.5,44.5088 Q190.9063,44.2275 190.2813,44.2275 Q188.9375,44.2275 188.25,45.3057 Q187.5625,46.3682 187.5625,48.4619 Q187.5625,50.5557 188.25,51.6338 Q188.9375,52.6963 190.2813,52.6963 Q190.9063,52.6963 191.5,52.4307 Q192.0938,52.1494 192.7188,51.5713 L192.7188,54.29 Z "/><text fill="#000000" font-family="Arial" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="36" x="210.25" y="53.0146">Goose</text><line style="stroke: #181818; stroke-width: 1.5;" x1="86.5" x2="337.5" y1="64.6494" y2="64.6494"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="92" x="91.5" y="79.3057">-gooseHealth: int</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="91" x="91.5" y="92.6152">-gooseSpeed: int</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="110" x="91.5" y="105.9248">-goosePosition: int[]</text><line style="stroke: #181818; stroke-width: 1.5;" x1="86.5" x2="337.5" y1="112.5781" y2="112.5781"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="120" x="91.5" y="127.2344">+getGooseHealth(): int</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="119" x="91.5" y="140.5439">+getGooseSpeed(): int</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="104" x="91.5" y="153.8535">+getPosition(): int[]</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="241" x="91.5" y="167.1631">+pathfindToPlayer(playerLocation: int[]): void</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="123" x="91.5" y="180.4727">+disperseGoose(): void</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="125" x="91.5" y="193.7822">+decrementHealth(): int</text><!--class Item--><rect fill="#F1F1F1" height="181.0957" id="Item" style="stroke: #181818; stroke-width: 1.5;" width="235" x="373.5" y="26.1494"/><ellipse cx="474.25" cy="42.1494" fill="#ADD1B2" rx="11" ry="11" style="stroke: #181818; stroke-width: 1.0;"/><path d="M477.2188,47.79 Q476.6406,48.0869 476,48.2275 Q475.3594,48.3838 474.6563,48.3838 Q472.1563,48.3838 470.8281,46.7432 Q469.5156,45.0869 469.5156,41.9619 Q469.5156,38.8369 470.8281,37.1807 Q472.1563,35.5244 474.6563,35.5244 Q475.3594,35.5244 476,35.6807 Q476.6563,35.8369 477.2188,36.1338 L477.2188,38.8525 Q476.5938,38.2744 476,38.0088 Q475.4063,37.7275 474.7813,37.7275 Q473.4375,37.7275 472.75,38.8057 Q472.0625,39.8682 472.0625,41.9619 Q472.0625,44.0557 472.75,45.1338 Q473.4375,46.1963 474.7813,46.1963 Q475.4063,46.1963 476,45.9307 Q476.5938,45.6494 477.2188,45.0713 L477.2188,47.79 Z "/><text fill="#000000" font-family="Arial" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="25" x="494.75" y="46.5146">Item</text><line style="stroke: #181818; stroke-width: 1.5;" x1="374.5" x2="607.5" y1="58.1494" y2="58.1494"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="72" x="379.5" y="72.8057">-name: String</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="99" x="379.5" y="86.1152">-effectType: String</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="93" x="379.5" y="99.4248">-strength: double</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="70" x="379.5" y="112.7344">-duration: int</text><line style="stroke: #181818; stroke-width: 1.5;" x1="374.5" x2="607.5" y1="119.3877" y2="119.3877"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="100" x="379.5" y="134.0439">+getName(): String</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="127" x="379.5" y="147.3535">+getEffectType(): String</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="121" x="379.5" y="160.6631">+getStrength(): double</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="98" x="379.5" y="173.9727">+getDuration(): int</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="223" x="379.5" y="187.2822">+applyToGeese(geese: List&lt;Goose&gt;): void</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="189" x="379.5" y="200.5918">+applyToPlayer(player: Player): void</text><!--link Goose to Item--><text fill="#7A2E2E" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="706" x="0" y="227.8057">Version 1 · 30 October 2026 · superseded by version 2 (12 November 2026). Redrawn from the original PlantUML; content unchanged.</text><!--
+@startuml
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam classAttributeIconSize 0
+skinparam titleFontSize 15
+skinparam titleFontStyle bold
+skinparam captionFontSize 11
+skinparam captionFontColor #7a2e2e
+skinparam class {
+  BackgroundColor #F1F1F1
+  BorderColor #181818
+  ArrowColor #181818
+}
+skinparam stereotypeCBackgroundColor #ADD1B2
+skinparam sequence {
+  ParticipantBackgroundColor #E2E2F0
+  ParticipantBorderColor #181818
+  ActorBackgroundColor #E2E2F0
+  ActorBorderColor #181818
+  ArrowColor #181818
+  LifeLineBorderColor #181818
+  LifeLineBackgroundColor #FFFFFF
+  GroupBorderColor #000000
+  GroupBackgroundColor #EEEEEE
+}
+skinparam noteBackgroundColor #FEFFDD
+skinparam noteBorderColor #181818
+title Figure 3 (v1). Goose and Item class diagrams
+caption Version 1 · 30 October 2026 · superseded by version 2 (12 November 2026). Redrawn from the original PlantUML; content unchanged.
+class Goose {
+  -gooseHealth: int
+  -gooseSpeed: int
+  -goosePosition: int[]
+  +getGooseHealth(): int
+  +getGooseSpeed(): int
+  +getPosition(): int[]
+  +pathfindToPlayer(playerLocation: int[]): void
+  +disperseGoose(): void
+  +decrementHealth(): int
+}
+class Item {
+  -name: String
+  -effectType: String
+  -strength: double
+  -duration: int
+  +getName(): String
+  +getEffectType(): String
+  +getStrength(): double
+  +getDuration(): int
+  +applyToGeese(geese: List<Goose>): void
+  +applyToPlayer(player: Player): void
+}
+Goose -[hidden]right- Item
+@enduml
+
+PlantUML version 1.2019.06(Fri May 24 18:10:25 BST 2019)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 21.0.12.1+1-1-24.04.4-Ubuntu
+Operating System: Linux
+OS Version: 6.18.44-fc-v445
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

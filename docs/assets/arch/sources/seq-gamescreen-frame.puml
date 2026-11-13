@@ -1,0 +1,56 @@
+@startuml seq-gamescreen-frame
+title Fig 3. One GameScreen frame: update, event trigger and win or loss
+skinparam shadowing false
+skinparam sequenceMessageAlign left
+skinparam ParticipantBackgroundColor #EEF4FB
+skinparam ParticipantBorderColor #1f3a5f
+autonumber
+participant Main
+participant GameScreen
+participant GameTimer
+participant Player
+participant WaveManager
+participant Goose
+participant ExhaustionMeter
+participant "Event\n(ScoreBoost / GooseRush)" as Event
+participant Score
+participant HUD
+
+Main -> GameScreen : render(delta)
+alt paused
+  GameScreen -> HUD : render(...) with pause menu
+else playing
+  GameScreen -> GameTimer : update(delta)
+  GameScreen -> Player : update(delta, map, geese)
+  GameScreen -> WaveManager : update(delta)
+  loop each active goose
+    WaveManager -> Goose : update(delta, player, map)
+    opt goose within reach of player
+      Goose -> ExhaustionMeter : fill(amount)
+    end
+  end
+  loop each event on the map
+    GameScreen -> Event : isInZone(player.getPosition())
+    Event --> GameScreen : inZone
+    opt inZone and not yet triggered
+      GameScreen -> Event : trigger(player, waves, score, settings)
+      Event -> Event : play sound and show visual cue
+      alt ScoreBoost
+        Event -> Score : setMultiplier(factor, seconds)
+      else GooseRush
+        Event -> WaveManager : addToNextWave(count)
+      end
+      GameScreen -> Score : recordEvent()
+    end
+  end
+  GameScreen -> HUD : render(timer, score, inventory, meter, waves)
+  GameScreen -> GameScreen : checkEnd()
+  alt waves.allWavesCleared()
+    GameScreen -> Main : showEnd(WIN_CLEARED, score)
+  else timer.isFinished()
+    GameScreen -> Main : showEnd(LOSS_TIME_UP, score)
+  else meter.isFull()
+    GameScreen -> Main : showEnd(LOSS_EXHAUSTED, score)
+  end
+end
+@enduml

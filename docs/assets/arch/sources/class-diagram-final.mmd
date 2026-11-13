@@ -1,0 +1,232 @@
+---
+config:
+  layout: elk
+  elk:
+    mergeEdges: true
+    nodePlacementStrategy: NETWORK_SIMPLEX
+---
+classDiagram
+direction TB
+
+%% ===== Screens (presentation) =====
+class Main {
+  <<extends LibGDX Game>>
+  -Settings settings
+  -SpriteBatch batch
+  +create() void
+  +showMenu() void
+  +startGame() void
+  +showTutorial() void
+  +showEnd(GameResult result, Score score) void
+}
+class MenuScreen {
+  <<implements Screen>>
+  -Main game
+  +render(float delta) void
+}
+class TutorialScreen {
+  <<implements Screen>>
+  -Main game
+  +render(float delta) void
+}
+class GameScreen {
+  <<implements Screen>>
+  -boolean paused
+  -List~Event~ events
+  -List~Item~ mapItems
+  +render(float delta) void
+  +togglePause() void
+  -update(float delta) void
+  -checkEvents() void
+  -checkEnd() void
+}
+class EndScreen {
+  <<implements Screen>>
+  -GameResult result
+  -Score score
+  +render(float delta) void
+}
+class GameResult {
+  <<enumeration>>
+  WIN_CLEARED
+  LOSS_TIME_UP
+  LOSS_EXHAUSTED
+}
+
+%% ===== Gameplay (logic) =====
+class Player {
+  -Vector2 position
+  -float speed
+  +update(float delta, GameMap map, List~Goose~ geese) void
+  +pickUp(Item item) void
+  +useItem(Vector2 target, List~Goose~ geese) int
+  +getPosition() Vector2
+}
+class ExhaustionMeter {
+  -float level
+  -float max
+  +fill(float amount) void
+  +recover(float amount) void
+  +isFull() boolean
+}
+class Inventory {
+  -List~Item~ items
+  -int selected
+  +add(Item item) void
+  +select(int slot) void
+  +takeSelected() Item
+}
+class Item {
+  <<abstract>>
+  #String name
+  #float range
+  #float strength
+  +apply(Vector2 target, List~Goose~ geese)* int
+}
+class Breadcrumbs {
+  +apply(target, geese) int
+}
+class Pebble {
+  +apply(target, geese) int
+}
+class Goose {
+  -Vector2 position
+  -float speed
+  -GooseState state
+  +update(float delta, Player player, GameMap map) void
+  +distract(Vector2 point) void
+  +enrage() void
+  +disperse() void
+  +isGone() boolean
+}
+class GooseState {
+  <<enumeration>>
+  CHASING
+  DISTRACTED
+  ENRAGED
+  DISPERSING
+  GONE
+}
+class WaveManager {
+  -int waveNumber
+  -float countdown
+  -int extraGeese
+  +update(float delta) void
+  +getActiveGeese() List~Goose~
+  +allWavesCleared() boolean
+  +addToNextWave(int count) void
+}
+class Event {
+  <<abstract>>
+  #Rectangle zone
+  #float duration
+  #boolean triggered
+  +isInZone(Vector2 position) boolean
+  +trigger(player, waves, score, settings) void
+  #applyEffect(player, waves, score)* void
+  +spawnItems() List~Item~
+}
+class ScoreBoost {
+  #applyEffect(player, waves, score) void
+}
+class GooseRush {
+  #applyEffect(player, waves, score) void
+}
+class Score {
+  -int points
+  -float multiplier
+  -int itemsUsed
+  -int eventsTriggered
+  +addDispersal(int count, float secondsIntoWave) void
+  +setMultiplier(float factor, float seconds) void
+  +recordItemUsed() void
+  +recordEvent() void
+}
+
+%% ===== Support =====
+class GameMap {
+  +isWalkable(Vector2 position) boolean
+  +getSpawnPoints() List~Vector2~
+  +render(Camera camera) void
+}
+class GameTimer {
+  -float remaining
+  -boolean running
+  +update(float delta) void
+  +pause() void
+  +resume() void
+  +isFinished() boolean
+}
+class HUD {
+  +render(timer, score, inventory, meter, waves) void
+}
+class Settings {
+  -float volume
+  -boolean fullscreen
+  +setVolume(float volume) void
+  +toggleFullscreen() void
+}
+
+%% ===== Ownership =====
+Main "1" *-- "1" Settings
+Main --> "0..1" MenuScreen : shows
+Main --> "0..1" TutorialScreen : shows
+Main --> "0..1" GameScreen : shows
+Main --> "0..1" EndScreen : shows
+GameScreen "1" *-- "1" GameMap
+GameScreen "1" *-- "1" Player
+GameScreen "1" *-- "1" WaveManager
+GameScreen "1" *-- "1" GameTimer
+GameScreen "1" *-- "1" Score
+GameScreen "1" *-- "1" HUD
+GameScreen "1" *-- "5..*" Event
+GameScreen "1" o-- "5..*" Item : map pickups
+Player "1" *-- "1" Inventory
+Player "1" *-- "1" ExhaustionMeter
+Inventory "1" o-- "0..*" Item
+WaveManager "1" *-- "0..*" Goose
+EndScreen --> "1" GameResult
+Goose --> "1" GooseState
+
+%% ===== Inheritance =====
+Item <|-- Breadcrumbs
+Item <|-- Pebble
+Event <|-- ScoreBoost
+Event <|-- GooseRush
+
+%% ===== Associations and dependencies =====
+Goose "0..*" --> "1" Player : chases
+Goose ..> ExhaustionMeter : fills
+Goose ..> GameMap : avoids walls
+Player ..> GameMap : checks bounds
+Item ..> Goose : disperses / distracts / enrages
+Event ..> WaveManager : changes wave size
+Event ..> Score : sets multiplier
+Event ..> Settings : reads volume
+Event ..> Item : spawns
+EndScreen ..> Score : shows totals
+
+%% ===== Colours by layer =====
+style Main fill:#eef4fc,stroke:#7fa3cf
+style MenuScreen fill:#eef4fc,stroke:#7fa3cf
+style TutorialScreen fill:#eef4fc,stroke:#7fa3cf
+style GameScreen fill:#eef4fc,stroke:#7fa3cf
+style EndScreen fill:#eef4fc,stroke:#7fa3cf
+style GameResult fill:#eef4fc,stroke:#7fa3cf
+style HUD fill:#eef4fc,stroke:#7fa3cf
+style Player fill:#fff6ec,stroke:#e0a96a
+style ExhaustionMeter fill:#fff6ec,stroke:#e0a96a
+style Inventory fill:#fff6ec,stroke:#e0a96a
+style Item fill:#fff6ec,stroke:#e0a96a
+style Breadcrumbs fill:#fff6ec,stroke:#e0a96a
+style Pebble fill:#fff6ec,stroke:#e0a96a
+style Goose fill:#fff6ec,stroke:#e0a96a
+style GooseState fill:#fff6ec,stroke:#e0a96a
+style WaveManager fill:#fff6ec,stroke:#e0a96a
+style Event fill:#fff6ec,stroke:#e0a96a
+style ScoreBoost fill:#fff6ec,stroke:#e0a96a
+style GooseRush fill:#fff6ec,stroke:#e0a96a
+style Score fill:#fff6ec,stroke:#e0a96a
+style GameMap fill:#eff8ee,stroke:#86b880
+style GameTimer fill:#eff8ee,stroke:#86b880
+style Settings fill:#eff8ee,stroke:#86b880

@@ -1,0 +1,18 @@
+@startuml
+!include _style.iuml
+title Figure 5 (v1). Goose dispersal and scoring sequence
+caption Version 1 · 30 October 2026 · superseded by version 2 (12 November 2026). Redrawn from the original PlantUML; content unchanged.
+participant Game
+participant Goose
+participant Score
+Game -> Goose : disperseGoose()
+Game -> Score : addDispersalPoints(1, timeElapsed)
+Score -> Score : calculateTimeBonus(timeElapsed)
+Game -> Score : getScore()
+Score --> Game : currentScore
+Game -> Score : isAllDispersed()
+Score --> Game : result
+alt All geese dispersed
+  Game -> Game : endGame()
+end
+@enduml

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="348px" preserveAspectRatio="none" style="width:718px;height:348px;" version="1.1" viewBox="0 0 718 348" width="718px" zoomAndPan="magnify"><defs/><g><text fill="#000000" font-family="Arial" font-size="15" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="333" x="186.5" y="14.5313">Figure 2 (v1). Score and Event class diagrams</text><!--class Score--><rect fill="#F1F1F1" height="234.334" id="Score" style="stroke: #181818; stroke-width: 1.5;" width="354" x="11.5" y="53.1494"/><ellipse cx="167.25" cy="69.1494" fill="#ADD1B2" rx="11" ry="11" style="stroke: #181818; stroke-width: 1.0;"/><path d="M170.2188,74.79 Q169.6406,75.0869 169,75.2275 Q168.3594,75.3838 167.6563,75.3838 Q165.1563,75.3838 163.8281,73.7432 Q162.5156,72.0869 162.5156,68.9619 Q162.5156,65.8369 163.8281,64.1807 Q165.1563,62.5244 167.6563,62.5244 Q168.3594,62.5244 169,62.6807 Q169.6563,62.8369 170.2188,63.1338 L170.2188,65.8525 Q169.5938,65.2744 169,65.0088 Q168.4063,64.7275 167.7813,64.7275 Q166.4375,64.7275 165.75,65.8057 Q165.0625,66.8682 165.0625,68.9619 Q165.0625,71.0557 165.75,72.1338 Q166.4375,73.1963 167.7813,73.1963 Q168.4063,73.1963 169,72.9307 Q169.5938,72.6494 170.2188,72.0713 L170.2188,74.79 Z "/><text fill="#000000" font-family="Arial" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="34" x="187.75" y="73.5146">Score</text><line style="stroke: #181818; stroke-width: 1.5;" x1="12.5" x2="364.5" y1="85.1494" y2="85.1494"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="93" x="17.5" y="99.8057">-currentScore: int</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="109" x="17.5" y="113.1152">-geeseDispersed: int</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="81" x="17.5" y="126.4248">-totalGeese: int</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="81" x="17.5" y="139.7344">-itemsUsed: int</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="127" x="17.5" y="153.0439">-scoreMultiplier: double</text><line style="stroke: #181818; stroke-width: 1.5;" x1="12.5" x2="364.5" y1="159.6973" y2="159.6973"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="82" x="17.5" y="174.3535">+getScore(): int</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="342" x="17.5" y="187.6631">+addDispersalPoints(in int geeseCount, in int timeElapsed): void</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="237" x="17.5" y="200.9727">+calculateTimeBonus(in int timeElapsed): int</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="192" x="17.5" y="214.2822">+applyItemBonus(in Item item): void</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="213" x="17.5" y="227.5918">+setMultiplier(in double multiplier): void</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="153" x="17.5" y="240.9014">+incrementItemsUsed(): void</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="108" x="17.5" y="254.2109">+getItemsUsed(): int</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="168" x="17.5" y="267.5205">+getPercentDispersed(): double</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="140" x="17.5" y="280.8301">+isAllDispersed(): boolean</text><!--class Event--><rect fill="#F1F1F1" height="287.5723" id="Event" style="stroke: #181818; stroke-width: 1.5;" width="282" x="400.5" y="26.1494"/><ellipse cx="521.25" cy="42.1494" fill="#ADD1B2" rx="11" ry="11" style="stroke: #181818; stroke-width: 1.0;"/><path d="M524.2188,47.79 Q523.6406,48.0869 523,48.2275 Q522.3594,48.3838 521.6563,48.3838 Q519.1563,48.3838 517.8281,46.7432 Q516.5156,45.0869 516.5156,41.9619 Q516.5156,38.8369 517.8281,37.1807 Q519.1563,35.5244 521.6563,35.5244 Q522.3594,35.5244 523,35.6807 Q523.6563,35.8369 524.2188,36.1338 L524.2188,38.8525 Q523.5938,38.2744 523,38.0088 Q522.4063,37.7275 521.7813,37.7275 Q520.4375,37.7275 519.75,38.8057 Q519.0625,39.8682 519.0625,41.9619 Q519.0625,44.0557 519.75,45.1338 Q520.4375,46.1963 521.7813,46.1963 Q522.4063,46.1963 523,45.9307 Q523.5938,45.6494 524.2188,45.0713 L524.2188,47.79 Z "/><text fill="#000000" font-family="Arial" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="32" x="541.75" y="46.5146">Event</text><line style="stroke: #181818; stroke-width: 1.5;" x1="401.5" x2="681.5" y1="58.1494" y2="58.1494"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="72" x="406.5" y="72.8057">-name: String</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="105" x="406.5" y="86.1152">-isPositive: boolean</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="114" x="406.5" y="99.4248">-isTriggered: boolean</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="114" x="406.5" y="112.7344">-triggerLocation: int[]</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="96" x="406.5" y="126.0439">-triggerRadius: int</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="70" x="406.5" y="139.3535">-duration: int</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="96" x="406.5" y="152.6631">-soundFile: String</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="121" x="406.5" y="165.9727">-scoreModifier: double</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="153" x="406.5" y="179.2822">-spawnableItems: List&lt;Item&gt;</text><line style="stroke: #181818; stroke-width: 1.5;" x1="401.5" x2="681.5" y1="185.9355" y2="185.9355"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="79" x="406.5" y="200.5918">+trigger(): void</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="270" x="406.5" y="213.9014">+isInTriggerRange(in int[] playerLocation): boolean</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="106" x="406.5" y="227.2109">+isActive(): boolean</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="220" x="406.5" y="240.5205">+affectGeese(in List&lt;Goose&gt; geese): void</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="186" x="406.5" y="253.8301">+affectPlayer(in Player player): void</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="141" x="406.5" y="267.1396">+spawnItems(): List&lt;Item&gt;</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="186" x="406.5" y="280.4492">+modifyScore(in Score score): void</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="101" x="406.5" y="293.7588">+playSound(): void</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="94" x="406.5" y="307.0684">+endEvent(): void</text><!--link Score to Event--><text fill="#7A2E2E" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="706" x="0" y="334.8057">Version 1 · 30 October 2026 · superseded by version 2 (12 November 2026). Redrawn from the original PlantUML; content unchanged.</text><!--
+@startuml
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam classAttributeIconSize 0
+skinparam titleFontSize 15
+skinparam titleFontStyle bold
+skinparam captionFontSize 11
+skinparam captionFontColor #7a2e2e
+skinparam class {
+  BackgroundColor #F1F1F1
+  BorderColor #181818
+  ArrowColor #181818
+}
+skinparam stereotypeCBackgroundColor #ADD1B2
+skinparam sequence {
+  ParticipantBackgroundColor #E2E2F0
+  ParticipantBorderColor #181818
+  ActorBackgroundColor #E2E2F0
+  ActorBorderColor #181818
+  ArrowColor #181818
+  LifeLineBorderColor #181818
+  LifeLineBackgroundColor #FFFFFF
+  GroupBorderColor #000000
+  GroupBackgroundColor #EEEEEE
+}
+skinparam noteBackgroundColor #FEFFDD
+skinparam noteBorderColor #181818
+title Figure 2 (v1). Score and Event class diagrams
+caption Version 1 · 30 October 2026 · superseded by version 2 (12 November 2026). Redrawn from the original PlantUML; content unchanged.
+class Score {
+  -currentScore: int
+  -geeseDispersed: int
+  -totalGeese: int
+  -itemsUsed: int
+  -scoreMultiplier: double
+  +getScore(): int
+  +addDispersalPoints(in int geeseCount, in int timeElapsed): void
+  +calculateTimeBonus(in int timeElapsed): int
+  +applyItemBonus(in Item item): void
+  +setMultiplier(in double multiplier): void
+  +incrementItemsUsed(): void
+  +getItemsUsed(): int
+  +getPercentDispersed(): double
+  +isAllDispersed(): boolean
+}
+class Event {
+  -name: String
+  -isPositive: boolean
+  -isTriggered: boolean
+  -triggerLocation: int[]
+  -triggerRadius: int
+  -duration: int
+  -soundFile: String
+  -scoreModifier: double
+  -spawnableItems: List<Item>
+  +trigger(): void
+  +isInTriggerRange(in int[] playerLocation): boolean
+  +isActive(): boolean
+  +affectGeese(in List<Goose> geese): void
+  +affectPlayer(in Player player): void
+  +spawnItems(): List<Item>
+  +modifyScore(in Score score): void
+  +playSound(): void
+  +endEvent(): void
+}
+Score -[hidden]right- Event
+@enduml
+
+PlantUML version 1.2019.06(Fri May 24 18:10:25 BST 2019)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 21.0.12.1+1-1-24.04.4-Ubuntu
+Operating System: Linux
+OS Version: 6.18.44-fc-v445
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

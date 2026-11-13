@@ -1,0 +1,26 @@
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam classAttributeIconSize 0
+skinparam titleFontSize 15
+skinparam titleFontStyle bold
+skinparam captionFontSize 11
+skinparam captionFontColor #7a2e2e
+skinparam class {
+  BackgroundColor #F1F1F1
+  BorderColor #181818
+  ArrowColor #181818
+}
+skinparam stereotypeCBackgroundColor #ADD1B2
+skinparam sequence {
+  ParticipantBackgroundColor #E2E2F0
+  ParticipantBorderColor #181818
+  ActorBackgroundColor #E2E2F0
+  ActorBorderColor #181818
+  ArrowColor #181818
+  LifeLineBorderColor #181818
+  LifeLineBackgroundColor #FFFFFF
+  GroupBorderColor #000000
+  GroupBackgroundColor #EEEEEE
+}
+skinparam noteBackgroundColor #FEFFDD
+skinparam noteBorderColor #181818

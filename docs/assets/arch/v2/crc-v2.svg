@@ -1,0 +1,385 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1394" height="1820" viewBox="0 0 1394 1820" font-family="Arial, Helvetica, sans-serif">
+<rect width="1394" height="1820" fill="white"/>
+<text x="28" y="52" font-size="22" font-weight="bold" fill="#1f2328">CRC cards, version 2</text>
+<text x="28" y="76" font-size="13" fill="#5b6470">17 classes in three layers · 12 November 2026 · each responsibility names the class it works with</text>
+<text x="28" y="110" font-size="15" font-weight="bold" fill="#7fa3cf">Screens (presentation)</text>
+<rect x="28" y="122" width="430" height="212" rx="6" fill="white" stroke="#7fa3cf" stroke-width="1.5"/>
+<path d="M28 152 V128 Q28 122 34 122 H452 Q458 122 458 128 V152 Z" fill="#d6e5f7" stroke="#7fa3cf" stroke-width="1.5"/>
+<text x="243.0" y="142" text-anchor="middle" font-size="15" font-weight="bold" fill="#1f2328">Main (extends LibGDX Game)</text>
+<rect x="28" y="152" width="430" height="22" fill="#f6f8fa" stroke="#9aa5b1" stroke-width="0.8"/>
+<text x="35" y="167" font-size="11.5" font-weight="bold" fill="#5b6470">Responsibility</text>
+<text x="305" y="167" font-size="11.5" font-weight="bold" fill="#5b6470">Collaborator</text>
+<line x1="298" y1="152" x2="298" y2="334" stroke="#9aa5b1" stroke-width="0.8"/>
+<line x1="28" y1="174" x2="458" y2="174" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="35" y="191" font-size="13" fill="#1f2328">Start the application and load assets once</text>
+<text x="305" y="191" font-size="13" fill="#1f2328">Settings</text>
+<line x1="28" y1="202" x2="458" y2="202" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="35" y="219" font-size="13" fill="#1f2328">Show the menu first</text>
+<text x="305" y="219" font-size="13" fill="#1f2328">MenuScreen</text>
+<line x1="28" y1="230" x2="458" y2="230" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="35" y="247" font-size="13" fill="#1f2328">Switch to the tutorial, game or end screen</text>
+<text x="35" y="263" font-size="13" fill="#1f2328">on request</text>
+<text x="305" y="247" font-size="13" fill="#1f2328">TutorialScreen,</text>
+<text x="305" y="263" font-size="13" fill="#1f2328">GameScreen,</text>
+<text x="305" y="279" font-size="13" fill="#1f2328">EndScreen</text>
+<line x1="28" y1="290" x2="458" y2="290" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="35" y="307" font-size="13" fill="#1f2328">Hold the shared SpriteBatch and Settings</text>
+<text x="35" y="323" font-size="13" fill="#1f2328">for every screen</text>
+<text x="305" y="307" font-size="13" fill="#1f2328">Settings</text>
+<rect x="28" y="122" width="430" height="212" rx="6" fill="none" stroke="#7fa3cf" stroke-width="1.5"/>
+<rect x="482" y="122" width="430" height="136" rx="6" fill="white" stroke="#7fa3cf" stroke-width="1.5"/>
+<path d="M482 152 V128 Q482 122 488 122 H906 Q912 122 912 128 V152 Z" fill="#d6e5f7" stroke="#7fa3cf" stroke-width="1.5"/>
+<text x="697.0" y="142" text-anchor="middle" font-size="15" font-weight="bold" fill="#1f2328">MenuScreen</text>
+<rect x="482" y="152" width="430" height="22" fill="#f6f8fa" stroke="#9aa5b1" stroke-width="0.8"/>
+<text x="489" y="167" font-size="11.5" font-weight="bold" fill="#5b6470">Responsibility</text>
+<text x="759" y="167" font-size="11.5" font-weight="bold" fill="#5b6470">Collaborator</text>
+<line x1="752" y1="152" x2="752" y2="258" stroke="#9aa5b1" stroke-width="0.8"/>
+<line x1="482" y1="174" x2="912" y2="174" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="489" y="191" font-size="13" fill="#1f2328">Show the title, Play, Tutorial and Quit</text>
+<text x="759" y="191" font-size="13" fill="#1f2328"></text>
+<line x1="482" y1="202" x2="912" y2="202" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="489" y="219" font-size="13" fill="#1f2328">Start a new game</text>
+<text x="759" y="219" font-size="13" fill="#1f2328">Main, GameScreen</text>
+<line x1="482" y1="230" x2="912" y2="230" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="489" y="247" font-size="13" fill="#1f2328">Open the tutorial</text>
+<text x="759" y="247" font-size="13" fill="#1f2328">Main, TutorialScreen</text>
+<rect x="482" y="122" width="430" height="136" rx="6" fill="none" stroke="#7fa3cf" stroke-width="1.5"/>
+<rect x="936" y="122" width="430" height="124" rx="6" fill="white" stroke="#7fa3cf" stroke-width="1.5"/>
+<path d="M936 152 V128 Q936 122 942 122 H1360 Q1366 122 1366 128 V152 Z" fill="#d6e5f7" stroke="#7fa3cf" stroke-width="1.5"/>
+<text x="1151.0" y="142" text-anchor="middle" font-size="15" font-weight="bold" fill="#1f2328">TutorialScreen</text>
+<rect x="936" y="152" width="430" height="22" fill="#f6f8fa" stroke="#9aa5b1" stroke-width="0.8"/>
+<text x="943" y="167" font-size="11.5" font-weight="bold" fill="#5b6470">Responsibility</text>
+<text x="1213" y="167" font-size="11.5" font-weight="bold" fill="#5b6470">Collaborator</text>
+<line x1="1206" y1="152" x2="1206" y2="246" stroke="#9aa5b1" stroke-width="0.8"/>
+<line x1="936" y1="174" x2="1366" y2="174" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="943" y="191" font-size="13" fill="#1f2328">Show controls, item effects, the exhaustion</text>
+<text x="943" y="207" font-size="13" fill="#1f2328">meter and the goal</text>
+<text x="1213" y="191" font-size="13" fill="#1f2328"></text>
+<line x1="936" y1="218" x2="1366" y2="218" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="943" y="235" font-size="13" fill="#1f2328">Return to the menu or start the game</text>
+<text x="1213" y="235" font-size="13" fill="#1f2328">Main, MenuScreen</text>
+<rect x="936" y="122" width="430" height="124" rx="6" fill="none" stroke="#7fa3cf" stroke-width="1.5"/>
+<rect x="28" y="358" width="430" height="360" rx="6" fill="white" stroke="#7fa3cf" stroke-width="1.5"/>
+<path d="M28 388 V364 Q28 358 34 358 H452 Q458 358 458 364 V388 Z" fill="#d6e5f7" stroke="#7fa3cf" stroke-width="1.5"/>
+<text x="243.0" y="378" text-anchor="middle" font-size="15" font-weight="bold" fill="#1f2328">GameScreen</text>
+<rect x="28" y="388" width="430" height="22" fill="#f6f8fa" stroke="#9aa5b1" stroke-width="0.8"/>
+<text x="35" y="403" font-size="11.5" font-weight="bold" fill="#5b6470">Responsibility</text>
+<text x="305" y="403" font-size="11.5" font-weight="bold" fill="#5b6470">Collaborator</text>
+<line x1="298" y1="388" x2="298" y2="718" stroke="#9aa5b1" stroke-width="0.8"/>
+<line x1="28" y1="410" x2="458" y2="410" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="35" y="427" font-size="13" fill="#1f2328">Create one session: map, player, waves,</text>
+<text x="35" y="443" font-size="13" fill="#1f2328">events, map items</text>
+<text x="305" y="427" font-size="13" fill="#1f2328">GameMap, Player,</text>
+<text x="305" y="443" font-size="13" fill="#1f2328">WaveManager, Event,</text>
+<text x="305" y="459" font-size="13" fill="#1f2328">Item</text>
+<line x1="28" y1="470" x2="458" y2="470" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="35" y="487" font-size="13" fill="#1f2328">Run the frame loop: update then draw</text>
+<text x="305" y="487" font-size="13" fill="#1f2328">Player, WaveManager,</text>
+<text x="305" y="503" font-size="13" fill="#1f2328">Event, HUD</text>
+<line x1="28" y1="514" x2="458" y2="514" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="35" y="531" font-size="13" fill="#1f2328">Start paused; pause and resume; show the</text>
+<text x="35" y="547" font-size="13" fill="#1f2328">pause menu</text>
+<text x="305" y="531" font-size="13" fill="#1f2328">GameTimer, Settings</text>
+<line x1="28" y1="558" x2="458" y2="558" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="35" y="575" font-size="13" fill="#1f2328">Pass key presses to the player</text>
+<text x="305" y="575" font-size="13" fill="#1f2328">Player</text>
+<line x1="28" y1="586" x2="458" y2="586" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="35" y="603" font-size="13" fill="#1f2328">Check each event&#x27;s trigger zone against the</text>
+<text x="35" y="619" font-size="13" fill="#1f2328">player&#x27;s position</text>
+<text x="305" y="603" font-size="13" fill="#1f2328">Event, Player</text>
+<line x1="28" y1="630" x2="458" y2="630" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="35" y="647" font-size="13" fill="#1f2328">Check win (all waves cleared) and loss</text>
+<text x="35" y="663" font-size="13" fill="#1f2328">(timer or meter)</text>
+<text x="305" y="647" font-size="13" fill="#1f2328">WaveManager,</text>
+<text x="305" y="663" font-size="13" fill="#1f2328">GameTimer,</text>
+<text x="305" y="679" font-size="13" fill="#1f2328">ExhaustionMeter</text>
+<line x1="28" y1="690" x2="458" y2="690" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="35" y="707" font-size="13" fill="#1f2328">Hand the result and score to the end screen</text>
+<text x="305" y="707" font-size="13" fill="#1f2328">Main, EndScreen, Score</text>
+<rect x="28" y="358" width="430" height="360" rx="6" fill="none" stroke="#7fa3cf" stroke-width="1.5"/>
+<rect x="482" y="358" width="430" height="168" rx="6" fill="white" stroke="#7fa3cf" stroke-width="1.5"/>
+<path d="M482 388 V364 Q482 358 488 358 H906 Q912 358 912 364 V388 Z" fill="#d6e5f7" stroke="#7fa3cf" stroke-width="1.5"/>
+<text x="697.0" y="378" text-anchor="middle" font-size="15" font-weight="bold" fill="#1f2328">EndScreen</text>
+<rect x="482" y="388" width="430" height="22" fill="#f6f8fa" stroke="#9aa5b1" stroke-width="0.8"/>
+<text x="489" y="403" font-size="11.5" font-weight="bold" fill="#5b6470">Responsibility</text>
+<text x="759" y="403" font-size="11.5" font-weight="bold" fill="#5b6470">Collaborator</text>
+<line x1="752" y1="388" x2="752" y2="526" stroke="#9aa5b1" stroke-width="0.8"/>
+<line x1="482" y1="410" x2="912" y2="410" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="489" y="427" font-size="13" fill="#1f2328">Show win or loss and the reason (cleared,</text>
+<text x="489" y="443" font-size="13" fill="#1f2328">time up, exhausted)</text>
+<text x="759" y="427" font-size="13" fill="#1f2328"></text>
+<line x1="482" y1="454" x2="912" y2="454" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="489" y="471" font-size="13" fill="#1f2328">Show final score, items used and events</text>
+<text x="489" y="487" font-size="13" fill="#1f2328">triggered</text>
+<text x="759" y="471" font-size="13" fill="#1f2328">Score</text>
+<line x1="482" y1="498" x2="912" y2="498" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="489" y="515" font-size="13" fill="#1f2328">Restart or return to the menu</text>
+<text x="759" y="515" font-size="13" fill="#1f2328">Main</text>
+<rect x="482" y="358" width="430" height="168" rx="6" fill="none" stroke="#7fa3cf" stroke-width="1.5"/>
+<rect x="936" y="358" width="430" height="156" rx="6" fill="white" stroke="#7fa3cf" stroke-width="1.5"/>
+<path d="M936 388 V364 Q936 358 942 358 H1360 Q1366 358 1366 364 V388 Z" fill="#d6e5f7" stroke="#7fa3cf" stroke-width="1.5"/>
+<text x="1151.0" y="378" text-anchor="middle" font-size="15" font-weight="bold" fill="#1f2328">HUD</text>
+<rect x="936" y="388" width="430" height="22" fill="#f6f8fa" stroke="#9aa5b1" stroke-width="0.8"/>
+<text x="943" y="403" font-size="11.5" font-weight="bold" fill="#5b6470">Responsibility</text>
+<text x="1213" y="403" font-size="11.5" font-weight="bold" fill="#5b6470">Collaborator</text>
+<line x1="1206" y1="388" x2="1206" y2="514" stroke="#9aa5b1" stroke-width="0.8"/>
+<line x1="936" y1="410" x2="1366" y2="410" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="943" y="427" font-size="13" fill="#1f2328">Draw time, score, items, meter, wave and</text>
+<text x="943" y="443" font-size="13" fill="#1f2328">counters</text>
+<text x="1213" y="427" font-size="13" fill="#1f2328">GameTimer, Score,</text>
+<text x="1213" y="443" font-size="13" fill="#1f2328">Inventory,</text>
+<text x="1213" y="459" font-size="13" fill="#1f2328">ExhaustionMeter,</text>
+<text x="1213" y="475" font-size="13" fill="#1f2328">WaveManager</text>
+<line x1="936" y1="486" x2="1366" y2="486" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="943" y="503" font-size="13" fill="#1f2328">Stay readable windowed and fullscreen</text>
+<text x="1213" y="503" font-size="13" fill="#1f2328">Settings</text>
+<rect x="936" y="358" width="430" height="156" rx="6" fill="none" stroke="#7fa3cf" stroke-width="1.5"/>
+<text x="28" y="758" font-size="15" font-weight="bold" fill="#e0a96a">Gameplay (logic)</text>
+<rect x="28" y="770" width="430" height="220" rx="6" fill="white" stroke="#e0a96a" stroke-width="1.5"/>
+<path d="M28 800 V776 Q28 770 34 770 H452 Q458 770 458 776 V800 Z" fill="#fbe0c2" stroke="#e0a96a" stroke-width="1.5"/>
+<text x="243.0" y="790" text-anchor="middle" font-size="15" font-weight="bold" fill="#1f2328">Player</text>
+<rect x="28" y="800" width="430" height="22" fill="#f6f8fa" stroke="#9aa5b1" stroke-width="0.8"/>
+<text x="35" y="815" font-size="11.5" font-weight="bold" fill="#5b6470">Responsibility</text>
+<text x="305" y="815" font-size="11.5" font-weight="bold" fill="#5b6470">Collaborator</text>
+<line x1="298" y1="800" x2="298" y2="990" stroke="#9aa5b1" stroke-width="0.8"/>
+<line x1="28" y1="822" x2="458" y2="822" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="35" y="839" font-size="13" fill="#1f2328">Move with WASD or arrows</text>
+<text x="305" y="839" font-size="13" fill="#1f2328"></text>
+<line x1="28" y1="850" x2="458" y2="850" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="35" y="867" font-size="13" fill="#1f2328">Stay inside the map and off walls</text>
+<text x="305" y="867" font-size="13" fill="#1f2328">GameMap</text>
+<line x1="28" y1="878" x2="458" y2="878" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="35" y="895" font-size="13" fill="#1f2328">Stop when a goose blocks the way</text>
+<text x="305" y="895" font-size="13" fill="#1f2328">Goose</text>
+<line x1="28" y1="906" x2="458" y2="906" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="35" y="923" font-size="13" fill="#1f2328">Pick up items walked over</text>
+<text x="305" y="923" font-size="13" fill="#1f2328">Item, Inventory</text>
+<line x1="28" y1="934" x2="458" y2="934" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="35" y="951" font-size="13" fill="#1f2328">Use or throw the selected item</text>
+<text x="305" y="951" font-size="13" fill="#1f2328">Inventory, Item</text>
+<line x1="28" y1="962" x2="458" y2="962" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="35" y="979" font-size="13" fill="#1f2328">Own the exhaustion meter</text>
+<text x="305" y="979" font-size="13" fill="#1f2328">ExhaustionMeter</text>
+<rect x="28" y="770" width="430" height="220" rx="6" fill="none" stroke="#e0a96a" stroke-width="1.5"/>
+<rect x="482" y="770" width="430" height="152" rx="6" fill="white" stroke="#e0a96a" stroke-width="1.5"/>
+<path d="M482 800 V776 Q482 770 488 770 H906 Q912 770 912 776 V800 Z" fill="#fbe0c2" stroke="#e0a96a" stroke-width="1.5"/>
+<text x="697.0" y="790" text-anchor="middle" font-size="15" font-weight="bold" fill="#1f2328">ExhaustionMeter</text>
+<rect x="482" y="800" width="430" height="22" fill="#f6f8fa" stroke="#9aa5b1" stroke-width="0.8"/>
+<text x="489" y="815" font-size="11.5" font-weight="bold" fill="#5b6470">Responsibility</text>
+<text x="759" y="815" font-size="11.5" font-weight="bold" fill="#5b6470">Collaborator</text>
+<line x1="752" y1="800" x2="752" y2="922" stroke="#9aa5b1" stroke-width="0.8"/>
+<line x1="482" y1="822" x2="912" y2="822" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="489" y="839" font-size="13" fill="#1f2328">Fill while geese are near or blocking;</text>
+<text x="489" y="855" font-size="13" fill="#1f2328">recover slowly otherwise</text>
+<text x="759" y="839" font-size="13" fill="#1f2328">Goose, Player</text>
+<line x1="482" y1="866" x2="912" y2="866" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="489" y="883" font-size="13" fill="#1f2328">Report when full (loss)</text>
+<text x="759" y="883" font-size="13" fill="#1f2328">GameScreen</text>
+<line x1="482" y1="894" x2="912" y2="894" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="489" y="911" font-size="13" fill="#1f2328">Expose its level for drawing</text>
+<text x="759" y="911" font-size="13" fill="#1f2328">HUD</text>
+<rect x="482" y="770" width="430" height="152" rx="6" fill="none" stroke="#e0a96a" stroke-width="1.5"/>
+<rect x="936" y="770" width="430" height="164" rx="6" fill="white" stroke="#e0a96a" stroke-width="1.5"/>
+<path d="M936 800 V776 Q936 770 942 770 H1360 Q1366 770 1366 776 V800 Z" fill="#fbe0c2" stroke="#e0a96a" stroke-width="1.5"/>
+<text x="1151.0" y="790" text-anchor="middle" font-size="15" font-weight="bold" fill="#1f2328">Inventory</text>
+<rect x="936" y="800" width="430" height="22" fill="#f6f8fa" stroke="#9aa5b1" stroke-width="0.8"/>
+<text x="943" y="815" font-size="11.5" font-weight="bold" fill="#5b6470">Responsibility</text>
+<text x="1213" y="815" font-size="11.5" font-weight="bold" fill="#5b6470">Collaborator</text>
+<line x1="1206" y1="800" x2="1206" y2="934" stroke="#9aa5b1" stroke-width="0.8"/>
+<line x1="936" y1="822" x2="1366" y2="822" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="943" y="839" font-size="13" fill="#1f2328">Hold items; start with 5</text>
+<text x="1213" y="839" font-size="13" fill="#1f2328">Item</text>
+<line x1="936" y1="850" x2="1366" y2="850" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="943" y="867" font-size="13" fill="#1f2328">Track the selected slot</text>
+<text x="1213" y="867" font-size="13" fill="#1f2328">Player</text>
+<line x1="936" y1="878" x2="1366" y2="878" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="943" y="895" font-size="13" fill="#1f2328">Remove an item once used</text>
+<text x="1213" y="895" font-size="13" fill="#1f2328">Item</text>
+<line x1="936" y1="906" x2="1366" y2="906" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="943" y="923" font-size="13" fill="#1f2328">Expose icons and counts for drawing</text>
+<text x="1213" y="923" font-size="13" fill="#1f2328">HUD</text>
+<rect x="936" y="770" width="430" height="164" rx="6" fill="none" stroke="#e0a96a" stroke-width="1.5"/>
+<rect x="28" y="1014" width="430" height="224" rx="6" fill="white" stroke="#e0a96a" stroke-width="1.5"/>
+<path d="M28 1044 V1020 Q28 1014 34 1014 H452 Q458 1014 458 1020 V1044 Z" fill="#fbe0c2" stroke="#e0a96a" stroke-width="1.5"/>
+<text x="243.0" y="1034" text-anchor="middle" font-size="15" font-weight="bold" fill="#1f2328">Item (abstract): Breadcrumbs, Pebble</text>
+<rect x="28" y="1044" width="430" height="22" fill="#f6f8fa" stroke="#9aa5b1" stroke-width="0.8"/>
+<text x="35" y="1059" font-size="11.5" font-weight="bold" fill="#5b6470">Responsibility</text>
+<text x="305" y="1059" font-size="11.5" font-weight="bold" fill="#5b6470">Collaborator</text>
+<line x1="298" y1="1044" x2="298" y2="1238" stroke="#9aa5b1" stroke-width="0.8"/>
+<line x1="28" y1="1066" x2="458" y2="1066" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="35" y="1083" font-size="13" fill="#1f2328">Know name, icon, range and strength</text>
+<text x="305" y="1083" font-size="13" fill="#1f2328"></text>
+<line x1="28" y1="1094" x2="458" y2="1094" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="35" y="1111" font-size="13" fill="#1f2328">Apply its effect to geese within range where</text>
+<text x="35" y="1127" font-size="13" fill="#1f2328">it lands</text>
+<text x="305" y="1111" font-size="13" fill="#1f2328">Goose</text>
+<line x1="28" y1="1138" x2="458" y2="1138" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="35" y="1155" font-size="13" fill="#1f2328">Breadcrumbs: disperse all geese in an area</text>
+<text x="305" y="1155" font-size="13" fill="#1f2328">Goose</text>
+<line x1="28" y1="1166" x2="458" y2="1166" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="35" y="1183" font-size="13" fill="#1f2328">Pebble: distract a goose if thrown near;</text>
+<text x="35" y="1199" font-size="13" fill="#1f2328">enrage it if thrown at it</text>
+<text x="305" y="1183" font-size="13" fill="#1f2328">Goose</text>
+<line x1="28" y1="1210" x2="458" y2="1210" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="35" y="1227" font-size="13" fill="#1f2328">Report a dispersal for points</text>
+<text x="305" y="1227" font-size="13" fill="#1f2328">Score</text>
+<rect x="28" y="1014" width="430" height="224" rx="6" fill="none" stroke="#e0a96a" stroke-width="1.5"/>
+<rect x="482" y="1014" width="430" height="268" rx="6" fill="white" stroke="#e0a96a" stroke-width="1.5"/>
+<path d="M482 1044 V1020 Q482 1014 488 1014 H906 Q912 1014 912 1020 V1044 Z" fill="#fbe0c2" stroke="#e0a96a" stroke-width="1.5"/>
+<text x="697.0" y="1034" text-anchor="middle" font-size="15" font-weight="bold" fill="#1f2328">Goose</text>
+<rect x="482" y="1044" width="430" height="22" fill="#f6f8fa" stroke="#9aa5b1" stroke-width="0.8"/>
+<text x="489" y="1059" font-size="11.5" font-weight="bold" fill="#5b6470">Responsibility</text>
+<text x="759" y="1059" font-size="11.5" font-weight="bold" fill="#5b6470">Collaborator</text>
+<line x1="752" y1="1044" x2="752" y2="1282" stroke="#9aa5b1" stroke-width="0.8"/>
+<line x1="482" y1="1066" x2="912" y2="1066" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="489" y="1083" font-size="13" fill="#1f2328">Know position, speed and state</text>
+<text x="759" y="1083" font-size="13" fill="#1f2328"></text>
+<line x1="482" y1="1094" x2="912" y2="1094" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="489" y="1111" font-size="13" fill="#1f2328">Chase the player around walls</text>
+<text x="759" y="1111" font-size="13" fill="#1f2328">Player, GameMap</text>
+<line x1="482" y1="1122" x2="912" y2="1122" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="489" y="1139" font-size="13" fill="#1f2328">Block the player and fill the meter when</text>
+<text x="489" y="1155" font-size="13" fill="#1f2328">close</text>
+<text x="759" y="1139" font-size="13" fill="#1f2328">Player, ExhaustionMeter</text>
+<line x1="482" y1="1166" x2="912" y2="1166" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="489" y="1183" font-size="13" fill="#1f2328">React to items: distracted, enraged or</text>
+<text x="489" y="1199" font-size="13" fill="#1f2328">dispersed</text>
+<text x="759" y="1183" font-size="13" fill="#1f2328">Item</text>
+<line x1="482" y1="1210" x2="912" y2="1210" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="489" y="1227" font-size="13" fill="#1f2328">React to events</text>
+<text x="759" y="1227" font-size="13" fill="#1f2328">Event</text>
+<line x1="482" y1="1238" x2="912" y2="1238" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="489" y="1255" font-size="13" fill="#1f2328">Leave the map when dispersed and tell its</text>
+<text x="489" y="1271" font-size="13" fill="#1f2328">wave</text>
+<text x="759" y="1255" font-size="13" fill="#1f2328">WaveManager</text>
+<rect x="482" y="1014" width="430" height="268" rx="6" fill="none" stroke="#e0a96a" stroke-width="1.5"/>
+<rect x="936" y="1014" width="430" height="224" rx="6" fill="white" stroke="#e0a96a" stroke-width="1.5"/>
+<path d="M936 1044 V1020 Q936 1014 942 1014 H1360 Q1366 1014 1366 1020 V1044 Z" fill="#fbe0c2" stroke="#e0a96a" stroke-width="1.5"/>
+<text x="1151.0" y="1034" text-anchor="middle" font-size="15" font-weight="bold" fill="#1f2328">WaveManager</text>
+<rect x="936" y="1044" width="430" height="22" fill="#f6f8fa" stroke="#9aa5b1" stroke-width="0.8"/>
+<text x="943" y="1059" font-size="11.5" font-weight="bold" fill="#5b6470">Responsibility</text>
+<text x="1213" y="1059" font-size="11.5" font-weight="bold" fill="#5b6470">Collaborator</text>
+<line x1="1206" y1="1044" x2="1206" y2="1238" stroke="#9aa5b1" stroke-width="0.8"/>
+<line x1="936" y1="1066" x2="1366" y2="1066" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="943" y="1083" font-size="13" fill="#1f2328">Spawn each wave of geese at the map</text>
+<text x="943" y="1099" font-size="13" fill="#1f2328">edges</text>
+<text x="1213" y="1083" font-size="13" fill="#1f2328">Goose, GameMap</text>
+<line x1="936" y1="1110" x2="1366" y2="1110" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="943" y="1127" font-size="13" fill="#1f2328">Run the short countdown between waves</text>
+<text x="1213" y="1127" font-size="13" fill="#1f2328">HUD</text>
+<line x1="936" y1="1138" x2="1366" y2="1138" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="943" y="1155" font-size="13" fill="#1f2328">Track geese left; report a cleared wave</text>
+<text x="1213" y="1155" font-size="13" fill="#1f2328">Score, GameScreen</text>
+<line x1="936" y1="1166" x2="1366" y2="1166" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="943" y="1183" font-size="13" fill="#1f2328">Report when every wave is cleared (win)</text>
+<text x="1213" y="1183" font-size="13" fill="#1f2328">GameScreen</text>
+<line x1="936" y1="1194" x2="1366" y2="1194" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="943" y="1211" font-size="13" fill="#1f2328">Change the next wave&#x27;s size when an event</text>
+<text x="943" y="1227" font-size="13" fill="#1f2328">says so</text>
+<text x="1213" y="1211" font-size="13" fill="#1f2328">Event</text>
+<rect x="936" y="1014" width="430" height="224" rx="6" fill="none" stroke="#e0a96a" stroke-width="1.5"/>
+<rect x="28" y="1306" width="430" height="240" rx="6" fill="white" stroke="#e0a96a" stroke-width="1.5"/>
+<path d="M28 1336 V1312 Q28 1306 34 1306 H452 Q458 1306 458 1312 V1336 Z" fill="#fbe0c2" stroke="#e0a96a" stroke-width="1.5"/>
+<text x="243.0" y="1326" text-anchor="middle" font-size="15" font-weight="bold" fill="#1f2328">Event (abstract): ScoreBoost, GooseRush</text>
+<rect x="28" y="1336" width="430" height="22" fill="#f6f8fa" stroke="#9aa5b1" stroke-width="0.8"/>
+<text x="35" y="1351" font-size="11.5" font-weight="bold" fill="#5b6470">Responsibility</text>
+<text x="305" y="1351" font-size="11.5" font-weight="bold" fill="#5b6470">Collaborator</text>
+<line x1="298" y1="1336" x2="298" y2="1546" stroke="#9aa5b1" stroke-width="0.8"/>
+<line x1="28" y1="1358" x2="458" y2="1358" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="35" y="1375" font-size="13" fill="#1f2328">Know its trigger zone, duration and whether</text>
+<text x="35" y="1391" font-size="13" fill="#1f2328">it is used</text>
+<text x="305" y="1375" font-size="13" fill="#1f2328"></text>
+<line x1="28" y1="1402" x2="458" y2="1402" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="35" y="1419" font-size="13" fill="#1f2328">Trigger once when the player enters the</text>
+<text x="35" y="1435" font-size="13" fill="#1f2328">zone</text>
+<text x="305" y="1419" font-size="13" fill="#1f2328">GameScreen, Player</text>
+<line x1="28" y1="1446" x2="458" y2="1446" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="35" y="1463" font-size="13" fill="#1f2328">Play its sound and show its visual cue</text>
+<text x="305" y="1463" font-size="13" fill="#1f2328">Settings</text>
+<line x1="28" y1="1474" x2="458" y2="1474" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="35" y="1491" font-size="13" fill="#1f2328">Apply its effect: geese, player, waves or</text>
+<text x="35" y="1507" font-size="13" fill="#1f2328">score</text>
+<text x="305" y="1491" font-size="13" fill="#1f2328">Goose, Player,</text>
+<text x="305" y="1507" font-size="13" fill="#1f2328">WaveManager, Score</text>
+<line x1="28" y1="1518" x2="458" y2="1518" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="35" y="1535" font-size="13" fill="#1f2328">Add or remove items on the map</text>
+<text x="305" y="1535" font-size="13" fill="#1f2328">Item</text>
+<rect x="28" y="1306" width="430" height="240" rx="6" fill="none" stroke="#e0a96a" stroke-width="1.5"/>
+<rect x="482" y="1306" width="430" height="180" rx="6" fill="white" stroke="#e0a96a" stroke-width="1.5"/>
+<path d="M482 1336 V1312 Q482 1306 488 1306 H906 Q912 1306 912 1312 V1336 Z" fill="#fbe0c2" stroke="#e0a96a" stroke-width="1.5"/>
+<text x="697.0" y="1326" text-anchor="middle" font-size="15" font-weight="bold" fill="#1f2328">Score</text>
+<rect x="482" y="1336" width="430" height="22" fill="#f6f8fa" stroke="#9aa5b1" stroke-width="0.8"/>
+<text x="489" y="1351" font-size="11.5" font-weight="bold" fill="#5b6470">Responsibility</text>
+<text x="759" y="1351" font-size="11.5" font-weight="bold" fill="#5b6470">Collaborator</text>
+<line x1="752" y1="1336" x2="752" y2="1486" stroke="#9aa5b1" stroke-width="0.8"/>
+<line x1="482" y1="1358" x2="912" y2="1358" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="489" y="1375" font-size="13" fill="#1f2328">Add points for each dispersal, more early in</text>
+<text x="489" y="1391" font-size="13" fill="#1f2328">a wave</text>
+<text x="759" y="1375" font-size="13" fill="#1f2328">WaveManager, Item</text>
+<line x1="482" y1="1402" x2="912" y2="1402" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="489" y="1419" font-size="13" fill="#1f2328">Apply and expire multipliers</text>
+<text x="759" y="1419" font-size="13" fill="#1f2328">Event</text>
+<line x1="482" y1="1430" x2="912" y2="1430" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="489" y="1447" font-size="13" fill="#1f2328">Count items used and events triggered</text>
+<text x="759" y="1447" font-size="13" fill="#1f2328">Player, Event</text>
+<line x1="482" y1="1458" x2="912" y2="1458" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="489" y="1475" font-size="13" fill="#1f2328">Expose totals for the HUD and end screen</text>
+<text x="759" y="1475" font-size="13" fill="#1f2328">HUD, EndScreen</text>
+<rect x="482" y="1306" width="430" height="180" rx="6" fill="none" stroke="#e0a96a" stroke-width="1.5"/>
+<text x="28" y="1586" font-size="15" font-weight="bold" fill="#86b880">Support</text>
+<rect x="28" y="1598" width="430" height="184" rx="6" fill="white" stroke="#86b880" stroke-width="1.5"/>
+<path d="M28 1628 V1604 Q28 1598 34 1598 H452 Q458 1598 458 1604 V1628 Z" fill="#d4ebd1" stroke="#86b880" stroke-width="1.5"/>
+<text x="243.0" y="1618" text-anchor="middle" font-size="15" font-weight="bold" fill="#1f2328">GameMap</text>
+<rect x="28" y="1628" width="430" height="22" fill="#f6f8fa" stroke="#9aa5b1" stroke-width="0.8"/>
+<text x="35" y="1643" font-size="11.5" font-weight="bold" fill="#5b6470">Responsibility</text>
+<text x="305" y="1643" font-size="11.5" font-weight="bold" fill="#5b6470">Collaborator</text>
+<line x1="298" y1="1628" x2="298" y2="1782" stroke="#9aa5b1" stroke-width="0.8"/>
+<line x1="28" y1="1650" x2="458" y2="1650" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="35" y="1667" font-size="13" fill="#1f2328">Load and draw the campus map with</text>
+<text x="35" y="1683" font-size="13" fill="#1f2328">landmarks</text>
+<text x="305" y="1667" font-size="13" fill="#1f2328"></text>
+<line x1="28" y1="1694" x2="458" y2="1694" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="35" y="1711" font-size="13" fill="#1f2328">Answer whether a position can be walked</text>
+<text x="35" y="1727" font-size="13" fill="#1f2328">on</text>
+<text x="305" y="1711" font-size="13" fill="#1f2328">Player, Goose</text>
+<line x1="28" y1="1738" x2="458" y2="1738" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="35" y="1755" font-size="13" fill="#1f2328">Give spawn points and interactable</text>
+<text x="35" y="1771" font-size="13" fill="#1f2328">buildings</text>
+<text x="305" y="1755" font-size="13" fill="#1f2328">WaveManager,</text>
+<text x="305" y="1771" font-size="13" fill="#1f2328">GameScreen</text>
+<rect x="28" y="1598" width="430" height="184" rx="6" fill="none" stroke="#86b880" stroke-width="1.5"/>
+<rect x="482" y="1598" width="430" height="136" rx="6" fill="white" stroke="#86b880" stroke-width="1.5"/>
+<path d="M482 1628 V1604 Q482 1598 488 1598 H906 Q912 1598 912 1604 V1628 Z" fill="#d4ebd1" stroke="#86b880" stroke-width="1.5"/>
+<text x="697.0" y="1618" text-anchor="middle" font-size="15" font-weight="bold" fill="#1f2328">GameTimer</text>
+<rect x="482" y="1628" width="430" height="22" fill="#f6f8fa" stroke="#9aa5b1" stroke-width="0.8"/>
+<text x="489" y="1643" font-size="11.5" font-weight="bold" fill="#5b6470">Responsibility</text>
+<text x="759" y="1643" font-size="11.5" font-weight="bold" fill="#5b6470">Collaborator</text>
+<line x1="752" y1="1628" x2="752" y2="1734" stroke="#9aa5b1" stroke-width="0.8"/>
+<line x1="482" y1="1650" x2="912" y2="1650" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="489" y="1667" font-size="13" fill="#1f2328">Count down 5 minutes; stop while paused</text>
+<text x="759" y="1667" font-size="13" fill="#1f2328">GameScreen</text>
+<line x1="482" y1="1678" x2="912" y2="1678" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="489" y="1695" font-size="13" fill="#1f2328">Report when time is up (loss)</text>
+<text x="759" y="1695" font-size="13" fill="#1f2328">GameScreen</text>
+<line x1="482" y1="1706" x2="912" y2="1706" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="489" y="1723" font-size="13" fill="#1f2328">Expose time left for drawing</text>
+<text x="759" y="1723" font-size="13" fill="#1f2328">HUD</text>
+<rect x="482" y="1598" width="430" height="136" rx="6" fill="none" stroke="#86b880" stroke-width="1.5"/>
+<rect x="936" y="1598" width="430" height="136" rx="6" fill="white" stroke="#86b880" stroke-width="1.5"/>
+<path d="M936 1628 V1604 Q936 1598 942 1598 H1360 Q1366 1598 1366 1604 V1628 Z" fill="#d4ebd1" stroke="#86b880" stroke-width="1.5"/>
+<text x="1151.0" y="1618" text-anchor="middle" font-size="15" font-weight="bold" fill="#1f2328">Settings</text>
+<rect x="936" y="1628" width="430" height="22" fill="#f6f8fa" stroke="#9aa5b1" stroke-width="0.8"/>
+<text x="943" y="1643" font-size="11.5" font-weight="bold" fill="#5b6470">Responsibility</text>
+<text x="1213" y="1643" font-size="11.5" font-weight="bold" fill="#5b6470">Collaborator</text>
+<line x1="1206" y1="1628" x2="1206" y2="1734" stroke="#9aa5b1" stroke-width="0.8"/>
+<line x1="936" y1="1650" x2="1366" y2="1650" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="943" y="1667" font-size="13" fill="#1f2328">Hold volume and fullscreen state</text>
+<text x="1213" y="1667" font-size="13" fill="#1f2328"></text>
+<line x1="936" y1="1678" x2="1366" y2="1678" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="943" y="1695" font-size="13" fill="#1f2328">Apply fullscreen when toggled</text>
+<text x="1213" y="1695" font-size="13" fill="#1f2328">Main</text>
+<line x1="936" y1="1706" x2="1366" y2="1706" stroke="#9aa5b1" stroke-width="0.6"/>
+<text x="943" y="1723" font-size="13" fill="#1f2328">Give the current volume to sounds</text>
+<text x="1213" y="1723" font-size="13" fill="#1f2328">Event</text>
+<rect x="936" y="1598" width="430" height="136" rx="6" fill="none" stroke="#86b880" stroke-width="1.5"/>
+</svg>

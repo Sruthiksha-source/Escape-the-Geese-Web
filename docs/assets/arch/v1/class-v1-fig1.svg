@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="361px" preserveAspectRatio="none" style="width:718px;height:361px;" version="1.1" viewBox="0 0 718 361" width="718px" zoomAndPan="magnify"><defs/><g><text fill="#000000" font-family="Arial" font-size="15" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="335" x="185.5" y="14.5313">Figure 1 (v1). Game and Player class diagrams</text><!--class game--><rect fill="#F1F1F1" height="247.6436" id="game" style="stroke: #181818; stroke-width: 1.5;" width="170" x="144.5" y="52.6494"/><ellipse cx="209.25" cy="68.6494" fill="#ADD1B2" rx="11" ry="11" style="stroke: #181818; stroke-width: 1.0;"/><path d="M212.2188,74.29 Q211.6406,74.5869 211,74.7275 Q210.3594,74.8838 209.6563,74.8838 Q207.1563,74.8838 205.8281,73.2432 Q204.5156,71.5869 204.5156,68.4619 Q204.5156,65.3369 205.8281,63.6807 Q207.1563,62.0244 209.6563,62.0244 Q210.3594,62.0244 211,62.1807 Q211.6563,62.3369 212.2188,62.6338 L212.2188,65.3525 Q211.5938,64.7744 211,64.5088 Q210.4063,64.2275 209.7813,64.2275 Q208.4375,64.2275 207.75,65.3057 Q207.0625,66.3682 207.0625,68.4619 Q207.0625,70.5557 207.75,71.6338 Q208.4375,72.6963 209.7813,72.6963 Q210.4063,72.6963 211,72.4307 Q211.5938,72.1494 212.2188,71.5713 L212.2188,74.29 Z "/><text fill="#000000" font-family="Arial" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="32" x="229.75" y="73.0146">game</text><line style="stroke: #181818; stroke-width: 1.5;" x1="145.5" x2="313.5" y1="84.6494" y2="84.6494"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="90" x="150.5" y="99.3057">-timeElapsed: int</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="75" x="150.5" y="112.6152">-player: Player</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="109" x="150.5" y="125.9248">-geese: List&lt;Goose&gt;</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="102" x="150.5" y="139.2344">-isPaused: boolean</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="111" x="150.5" y="152.5439">-eventsTriggered: int</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="94" x="150.5" y="165.8535">-waveNumber: int</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="119" x="150.5" y="179.1631">-mapItems: List&lt;Item&gt;</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="133" x="150.5" y="192.4727">-mapEvents: List&lt;Event&gt;</text><line style="stroke: #181818; stroke-width: 1.5;" x1="145.5" x2="313.5" y1="199.126" y2="199.126"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="106" x="150.5" y="213.7822">+pauseGame(): void</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="94" x="150.5" y="227.0918">+endGame(): void</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="127" x="150.5" y="240.4014">+isGameOver(): boolean</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="129" x="150.5" y="253.7109">+checkForEvents(): void</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="115" x="150.5" y="267.0205">+activateEvent(): void</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="158" x="150.5" y="280.3301">+getNextWave(): List&lt;Goose&gt;</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="134" x="150.5" y="293.6396">+checkForWin(): boolean</text><!--class Player--><rect fill="#F1F1F1" height="300.8818" id="Player" style="stroke: #181818; stroke-width: 1.5;" width="199" x="350" y="26.1494"/><ellipse cx="426.75" cy="42.1494" fill="#ADD1B2" rx="11" ry="11" style="stroke: #181818; stroke-width: 1.0;"/><path d="M429.7188,47.79 Q429.1406,48.0869 428.5,48.2275 Q427.8594,48.3838 427.1563,48.3838 Q424.6563,48.3838 423.3281,46.7432 Q422.0156,45.0869 422.0156,41.9619 Q422.0156,38.8369 423.3281,37.1807 Q424.6563,35.5244 427.1563,35.5244 Q427.8594,35.5244 428.5,35.6807 Q429.1563,35.8369 429.7188,36.1338 L429.7188,38.8525 Q429.0938,38.2744 428.5,38.0088 Q427.9063,37.7275 427.2813,37.7275 Q425.9375,37.7275 425.25,38.8057 Q424.5625,39.8682 424.5625,41.9619 Q424.5625,44.0557 425.25,45.1338 Q425.9375,46.1963 427.2813,46.1963 Q427.9063,46.1963 428.5,45.9307 Q429.0938,45.6494 429.7188,45.0713 L429.7188,47.79 Z "/><text fill="#000000" font-family="Arial" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="37" x="447.25" y="46.5146">Player</text><line style="stroke: #181818; stroke-width: 1.5;" x1="351" x2="548" y1="58.1494" y2="58.1494"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="356" y="72.8057">-speed: int</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="54" x="356" y="86.1152">-score: int</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="58" x="356" y="99.4248">-health: int</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="76" x="356" y="112.7344">-location: int[]</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="121" x="356" y="126.0439">-inventoryItems: Item[]</text><line style="stroke: #181818; stroke-width: 1.5;" x1="351" x2="548" y1="132.6973" y2="132.6973"/><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="82" x="356" y="147.3535">+getScore(): int</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="86" x="356" y="160.6631">+getHealth(): int</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="181" x="356" y="173.9727">+takeDamage(in int damage): void</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="131" x="356" y="187.2822">+isHealthZero(): boolean</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="106" x="356" y="200.5918">+getLocation(): int[]</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="88" x="356" y="213.9014">+moveUp(): void</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="104" x="356" y="227.2109">+moveDown(): void</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="93" x="356" y="240.5205">+moveLeft(): void</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="101" x="356" y="253.8301">+moveRight(): void</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="124" x="356" y="267.1396">+isInBounds(): boolean</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="98" x="356" y="280.4492">+getItems(): Item[]</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="187" x="356" y="293.7588">+useItem(in int inventorySlot): void</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="186" x="356" y="307.0684">+pickUpItem(in Item item): boolean</text><text fill="#000000" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="177" x="356" y="320.3779">+increaseScore(in int score): void</text><!--link game to Player--><text fill="#7A2E2E" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="706" x="0" y="347.8057">Version 1 · 30 October 2026 · superseded by version 2 (12 November 2026). Redrawn from the original PlantUML; content unchanged.</text><!--
+@startuml
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam classAttributeIconSize 0
+skinparam titleFontSize 15
+skinparam titleFontStyle bold
+skinparam captionFontSize 11
+skinparam captionFontColor #7a2e2e
+skinparam class {
+  BackgroundColor #F1F1F1
+  BorderColor #181818
+  ArrowColor #181818
+}
+skinparam stereotypeCBackgroundColor #ADD1B2
+skinparam sequence {
+  ParticipantBackgroundColor #E2E2F0
+  ParticipantBorderColor #181818
+  ActorBackgroundColor #E2E2F0
+  ActorBorderColor #181818
+  ArrowColor #181818
+  LifeLineBorderColor #181818
+  LifeLineBackgroundColor #FFFFFF
+  GroupBorderColor #000000
+  GroupBackgroundColor #EEEEEE
+}
+skinparam noteBackgroundColor #FEFFDD
+skinparam noteBorderColor #181818
+title Figure 1 (v1). Game and Player class diagrams
+caption Version 1 · 30 October 2026 · superseded by version 2 (12 November 2026). Redrawn from the original PlantUML; content unchanged.
+class game {
+  -timeElapsed: int
+  -player: Player
+  -geese: List<Goose>
+  -isPaused: boolean
+  -eventsTriggered: int
+  -waveNumber: int
+  -mapItems: List<Item>
+  -mapEvents: List<Event>
+  +pauseGame(): void
+  +endGame(): void
+  +isGameOver(): boolean
+  +checkForEvents(): void
+  +activateEvent(): void
+  +getNextWave(): List<Goose>
+  +checkForWin(): boolean
+}
+class Player {
+  -speed: int
+  -score: int
+  -health: int
+  -location: int[]
+  -inventoryItems: Item[]
+  +getScore(): int
+  +getHealth(): int
+  +takeDamage(in int damage): void
+  +isHealthZero(): boolean
+  +getLocation(): int[]
+  +moveUp(): void
+  +moveDown(): void
+  +moveLeft(): void
+  +moveRight(): void
+  +isInBounds(): boolean
+  +getItems(): Item[]
+  +useItem(in int inventorySlot): void
+  +pickUpItem(in Item item): boolean
+  +increaseScore(in int score): void
+}
+game -[hidden]right- Player
+@enduml
+
+PlantUML version 1.2019.06(Fri May 24 18:10:25 BST 2019)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 21.0.12.1+1-1-24.04.4-Ubuntu
+Operating System: Linux
+OS Version: 6.18.44-fc-v445
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

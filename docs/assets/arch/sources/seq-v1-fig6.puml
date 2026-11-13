@@ -1,0 +1,27 @@
+@startuml
+!include _style.iuml
+title Figure 6 (v1). Event triggering and game completion sequence
+caption Version 1 · 30 October 2026 · superseded by version 2 (12 November 2026). Redrawn from the original PlantUML; content unchanged.
+participant Game
+participant Player
+participant Event
+participant Score
+Game -> Game : checkForEvents()
+Game -> Player : getLocation()
+Player --> Game : location
+Game -> Event : isInTriggerRange(location)
+Event --> Game : result
+alt Event in range
+  Game -> Game : activateEvent()
+  Game -> Event : trigger()
+  Game -> Event : affectPlayer(Player)
+  Game -> Event : affectGeese(geese)
+  Game -> Event : modifyScore(Score)
+end
+Game -> Game : checkForWin()
+Game -> Score : isAllDispersed()
+Score --> Game : result
+alt All geese dispersed
+  Game -> Game : endGame()
+end
+@enduml

@@ -1,0 +1,31 @@
+@startuml
+!include _style.iuml
+title Figure 8 (v1). Item use and wave dispersal sequence
+caption Version 1 · 30 October 2026 · superseded by version 2 (12 November 2026). Redrawn from the original PlantUML; content unchanged.
+actor User
+participant Game
+participant Player
+participant Item
+participant Goose
+participant Score
+User -> Game : uses an item
+Game -> Player : useItem(inventorySlot)
+Player -> Item : applyToGeese(geese)
+Item -> Goose : disperseGoose()
+Goose --> Item
+Item --> Player
+Player --> Game
+Game -> Score : incrementItemsUsed()
+alt Wave dispersed
+  Game -> Score : addDispersalPoints(geeseCount, timeElapsed)
+  Score -> Score : calculateTimeBonus(timeElapsed)
+  Game -> Score : applyItemBonus(item)
+end
+Game -> Score : isAllDispersed()
+Score --> Game : result
+alt All waves dispersed
+  Game -> Game : endGame()
+else More waves remaining
+  Game -> Game : getNextWave()
+end
+@enduml

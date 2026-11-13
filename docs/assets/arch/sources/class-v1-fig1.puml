@@ -1,0 +1,44 @@
+@startuml
+!include _style.iuml
+title Figure 1 (v1). Game and Player class diagrams
+caption Version 1 · 30 October 2026 · superseded by version 2 (12 November 2026). Redrawn from the original PlantUML; content unchanged.
+class game {
+  -timeElapsed: int
+  -player: Player
+  -geese: List<Goose>
+  -isPaused: boolean
+  -eventsTriggered: int
+  -waveNumber: int
+  -mapItems: List<Item>
+  -mapEvents: List<Event>
+  +pauseGame(): void
+  +endGame(): void
+  +isGameOver(): boolean
+  +checkForEvents(): void
+  +activateEvent(): void
+  +getNextWave(): List<Goose>
+  +checkForWin(): boolean
+}
+class Player {
+  -speed: int
+  -score: int
+  -health: int
+  -location: int[]
+  -inventoryItems: Item[]
+  +getScore(): int
+  +getHealth(): int
+  +takeDamage(in int damage): void
+  +isHealthZero(): boolean
+  +getLocation(): int[]
+  +moveUp(): void
+  +moveDown(): void
+  +moveLeft(): void
+  +moveRight(): void
+  +isInBounds(): boolean
+  +getItems(): Item[]
+  +useItem(in int inventorySlot): void
+  +pickUpItem(in Item item): boolean
+  +increaseScore(in int score): void
+}
+game -[hidden]right- Player
+@enduml

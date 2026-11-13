@@ -1,0 +1,28 @@
+@startuml
+!include _style.iuml
+title Figure 9 (v1). Event triggering, item spawning and score modification sequence
+caption Version 1 · 30 October 2026 · superseded by version 2 (12 November 2026). Redrawn from the original PlantUML; content unchanged.
+participant Game
+participant Player
+participant Event
+participant Score
+Game -> Game : checkForEvents()
+Game -> Player : getLocation()
+Player --> Game : location
+Game -> Event : isInTriggerRange(location)
+Event --> Game : result
+alt Event in range
+  Game -> Game : activateEvent()
+  note right of Game : increments eventsTriggered
+  Game -> Event : trigger()
+  Event -> Event : playSound()
+  Game -> Event : spawnItems()
+  Event --> Game : items
+  loop for each spawned item
+    Game -> Player : pickUpItem(item)
+    Player --> Game : result
+  end
+  Game -> Event : modifyScore(score)
+  Event -> Score : setMultiplier(scoreModifier)
+end
+@enduml

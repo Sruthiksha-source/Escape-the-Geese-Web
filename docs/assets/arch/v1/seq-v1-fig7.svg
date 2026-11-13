@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="718px" preserveAspectRatio="none" style="width:721px;height:718px;" version="1.1" viewBox="0 0 721 718" width="721px" zoomAndPan="magnify"><defs/><g><text fill="#000000" font-family="Arial" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="392" x="160" y="23.5625">Figure 7 (v1). Goose behaviour and item effects sequence</text><text fill="#7A2E2E" font-family="Arial" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="706" x="3" y="704.6055">Version 1 · 30 October 2026 · superseded by version 2 (12 November 2026). Redrawn from the original PlantUML; content unchanged.</text><rect fill="#FFFFFF" height="90.1885" style="stroke: #000000; stroke-width: 2.0;" width="324" x="170.5" y="376.4443"/><line style="stroke: #181818; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="207.5" x2="207.5" y1="65.8789" y2="662.0098"/><line style="stroke: #181818; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="338.5" x2="338.5" y1="65.8789" y2="662.0098"/><line style="stroke: #181818; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="462.5" x2="462.5" y1="65.8789" y2="662.0098"/><line style="stroke: #181818; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="520.5" x2="520.5" y1="65.8789" y2="662.0098"/><rect fill="#E2E2F0" height="30.9395" style="stroke: #181818; stroke-width: 1.5;" width="55" x="180.5" y="33.9395"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="41" x="187.5" y="54.502">Goose</text><rect fill="#E2E2F0" height="30.9395" style="stroke: #181818; stroke-width: 1.5;" width="55" x="180.5" y="661.0098"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="41" x="187.5" y="681.5723">Goose</text><rect fill="#E2E2F0" height="30.9395" style="stroke: #181818; stroke-width: 1.5;" width="55" x="311.5" y="33.9395"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="41" x="318.5" y="54.502">Player</text><rect fill="#E2E2F0" height="30.9395" style="stroke: #181818; stroke-width: 1.5;" width="55" x="311.5" y="661.0098"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="41" x="318.5" y="681.5723">Player</text><rect fill="#E2E2F0" height="30.9395" style="stroke: #181818; stroke-width: 1.5;" width="43" x="441.5" y="33.9395"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="29" x="448.5" y="54.502">Item</text><rect fill="#E2E2F0" height="30.9395" style="stroke: #181818; stroke-width: 1.5;" width="43" x="441.5" y="661.0098"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="29" x="448.5" y="681.5723">Item</text><rect fill="#E2E2F0" height="30.9395" style="stroke: #181818; stroke-width: 1.5;" width="52" x="494.5" y="33.9395"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="38" x="501.5" y="54.502">Score</text><rect fill="#E2E2F0" height="30.9395" style="stroke: #181818; stroke-width: 1.5;" width="52" x="494.5" y="661.0098"/><text fill="#000000" font-family="Arial" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="38" x="501.5" y="681.5723">Score</text><line style="stroke: #181818; stroke-width: 1.0;" x1="208" x2="250" y1="97.6084" y2="97.6084"/><line style="stroke: #181818; stroke-width: 1.0;" x1="250" x2="250" y1="97.6084" y2="110.6084"/><line style="stroke: #181818; stroke-width: 1.0;" x1="209" x2="250" y1="110.6084" y2="110.6084"/><polygon fill="#181818" points="219,106.6084,209,110.6084,219,114.6084,215,110.6084" style="stroke: #181818; stroke-width: 1.0;"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="115" x="215" y="92.4727">pathfindToPlayer()</text><polygon fill="#181818" points="327,136.3379,337,140.3379,327,144.3379,331,140.3379" style="stroke: #181818; stroke-width: 1.0;"/><line style="stroke: #181818; stroke-width: 1.0;" x1="208" x2="333" y1="140.3379" y2="140.3379"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="82" x="215" y="135.2021">getLocation()</text><polygon fill="#181818" points="219,166.0674,209,170.0674,219,174.0674,215,170.0674" style="stroke: #181818; stroke-width: 1.0;"/><line style="stroke: #181818; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="213" x2="338" y1="170.0674" y2="170.0674"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="35" x="225" y="164.9316">result</text><polygon fill="#181818" points="327,195.7969,337,199.7969,327,203.7969,331,199.7969" style="stroke: #181818; stroke-width: 1.0;"/><line style="stroke: #181818; stroke-width: 1.0;" x1="208" x2="333" y1="199.7969" y2="199.7969"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="70" x="215" y="194.6611">getHealth()</text><polygon fill="#181818" points="219,225.5264,209,229.5264,219,233.5264,215,229.5264" style="stroke: #181818; stroke-width: 1.0;"/><line style="stroke: #181818; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="213" x2="338" y1="229.5264" y2="229.5264"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="35" x="225" y="224.3906">result</text><line style="stroke: #181818; stroke-width: 1.0;" x1="208" x2="250" y1="259.2559" y2="259.2559"/><line style="stroke: #181818; stroke-width: 1.0;" x1="250" x2="250" y1="259.2559" y2="272.2559"/><line style="stroke: #181818; stroke-width: 1.0;" x1="209" x2="250" y1="272.2559" y2="272.2559"/><polygon fill="#181818" points="219,268.2559,209,272.2559,219,276.2559,215,272.2559" style="stroke: #181818; stroke-width: 1.0;"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="117" x="215" y="254.1201">decrementHealth()</text><polygon fill="#181818" points="451,297.9854,461,301.9854,451,305.9854,455,301.9854" style="stroke: #181818; stroke-width: 1.0;"/><line style="stroke: #181818; stroke-width: 1.0;" x1="339" x2="457" y1="301.9854" y2="301.9854"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="100" x="346" y="296.8496">applyToGeese()</text><polygon fill="#181818" points="219,327.7148,209,331.7148,219,335.7148,215,331.7148" style="stroke: #181818; stroke-width: 1.0;"/><line style="stroke: #181818; stroke-width: 1.0;" x1="213" x2="462" y1="331.7148" y2="331.7148"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="105" x="225" y="326.5791">disperseGoose()</text><polygon fill="#181818" points="451,357.4443,461,361.4443,451,365.4443,455,361.4443" style="stroke: #181818; stroke-width: 1.0;"/><line style="stroke: #181818; stroke-width: 1.0;" x1="208" x2="457" y1="361.4443" y2="361.4443"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="98" x="215" y="356.3086">getEffectType()</text><path d="M170.5,376.4443 L232.5,376.4443 L232.5,383.4443 L222.5,393.4443 L170.5,393.4443 L170.5,376.4443 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 1.0;"/><rect fill="none" height="90.1885" style="stroke: #000000; stroke-width: 2.0;" width="324" x="170.5" y="376.4443"/><text fill="#000000" font-family="Arial" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="17" x="185.5" y="390.0381">alt</text><text fill="#000000" font-family="Arial" font-size="11" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="115" x="247.5" y="389.1006">[if item harms geese]</text><line style="stroke: #181818; stroke-width: 1.0;" x1="208" x2="250" y1="415.9033" y2="415.9033"/><line style="stroke: #181818; stroke-width: 1.0;" x1="250" x2="250" y1="415.9033" y2="428.9033"/><line style="stroke: #181818; stroke-width: 1.0;" x1="209" x2="250" y1="428.9033" y2="428.9033"/><polygon fill="#181818" points="219,424.9033,209,428.9033,219,432.9033,215,428.9033" style="stroke: #181818; stroke-width: 1.0;"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="101" x="215" y="410.7676">getGooseHealth</text><polygon fill="#181818" points="451,454.6328,461,458.6328,451,462.6328,455,458.6328" style="stroke: #181818; stroke-width: 1.0;"/><line style="stroke: #181818; stroke-width: 1.0;" x1="208" x2="457" y1="458.6328" y2="458.6328"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="83" x="215" y="453.4971">getStrength()</text><polygon fill="#181818" points="508.5,491.3623,518.5,495.3623,508.5,499.3623,512.5,495.3623" style="stroke: #181818; stroke-width: 1.0;"/><line style="stroke: #181818; stroke-width: 1.0;" x1="208" x2="514.5" y1="495.3623" y2="495.3623"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="131" x="215" y="490.2266">getPercentDispersed</text><polygon fill="#181818" points="219,521.0918,209,525.0918,219,529.0918,215,525.0918" style="stroke: #181818; stroke-width: 1.0;"/><line style="stroke: #181818; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="213" x2="519.5" y1="525.0918" y2="525.0918"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="112" x="225" y="519.9561">GeeseDisperesed</text><polygon fill="#181818" points="451,550.8213,461,554.8213,451,558.8213,455,554.8213" style="stroke: #181818; stroke-width: 1.0;"/><line style="stroke: #181818; stroke-width: 1.0;" x1="208" x2="457" y1="554.8213" y2="554.8213"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="83" x="215" y="549.6855">getStrength()</text><polygon fill="#181818" points="219,580.5508,209,584.5508,219,588.5508,215,584.5508" style="stroke: #181818; stroke-width: 1.0;"/><line style="stroke: #181818; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="213" x2="462" y1="584.5508" y2="584.5508"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="35" x="225" y="579.415">result</text><polygon fill="#181818" points="451,610.2803,461,614.2803,451,618.2803,455,614.2803" style="stroke: #181818; stroke-width: 1.0;"/><line style="stroke: #181818; stroke-width: 1.0;" x1="208" x2="457" y1="614.2803" y2="614.2803"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="82" x="215" y="609.1445">getDuration()</text><polygon fill="#181818" points="219,640.0098,209,644.0098,219,648.0098,215,644.0098" style="stroke: #181818; stroke-width: 1.0;"/><line style="stroke: #181818; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="213" x2="462" y1="644.0098" y2="644.0098"/><text fill="#000000" font-family="Arial" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="35" x="225" y="638.874">result</text><!--
+@startuml
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam classAttributeIconSize 0
+skinparam titleFontSize 15
+skinparam titleFontStyle bold
+skinparam captionFontSize 11
+skinparam captionFontColor #7a2e2e
+skinparam class {
+  BackgroundColor #F1F1F1
+  BorderColor #181818
+  ArrowColor #181818
+}
+skinparam stereotypeCBackgroundColor #ADD1B2
+skinparam sequence {
+  ParticipantBackgroundColor #E2E2F0
+  ParticipantBorderColor #181818
+  ActorBackgroundColor #E2E2F0
+  ActorBorderColor #181818
+  ArrowColor #181818
+  LifeLineBorderColor #181818
+  LifeLineBackgroundColor #FFFFFF
+  GroupBorderColor #000000
+  GroupBackgroundColor #EEEEEE
+}
+skinparam noteBackgroundColor #FEFFDD
+skinparam noteBorderColor #181818
+title Figure 7 (v1). Goose behaviour and item effects sequence
+caption Version 1 · 30 October 2026 · superseded by version 2 (12 November 2026). Redrawn from the original PlantUML; content unchanged.
+participant Goose
+participant Player
+participant Item
+participant Score
+Goose -> Goose : pathfindToPlayer()
+Goose -> Player : getLocation()
+Player - -> Goose : result
+Goose -> Player : getHealth()
+Player - -> Goose : result
+Goose -> Goose : decrementHealth()
+Player -> Item : applyToGeese()
+Item -> Goose : disperseGoose()
+Goose -> Item : getEffectType()
+alt if item harms geese
+  Goose -> Goose : getGooseHealth
+  Goose -> Item : getStrength()
+end
+Goose -> Score : getPercentDispersed
+Score - -> Goose : GeeseDisperesed
+Goose -> Item : getStrength()
+Item - -> Goose : result
+Goose -> Item : getDuration()
+Item - -> Goose : result
+@enduml
+
+PlantUML version 1.2019.06(Fri May 24 18:10:25 BST 2019)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 21.0.12.1+1-1-24.04.4-Ubuntu
+Operating System: Linux
+OS Version: 6.18.44-fc-v445
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
