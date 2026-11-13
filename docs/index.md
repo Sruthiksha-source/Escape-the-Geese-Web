@@ -13,7 +13,7 @@ Escape the Geese is a top-down 2D game set on the University of York campus, bui
 - Ben Smejko
 - Henrik Bowden
 - Tim Giles
-- June Njiro
+- June Njiru
 
 ## Links
 - [Game repository](https://github.com/Sruthiksha-source/Escape-The-Geese.github.io)
