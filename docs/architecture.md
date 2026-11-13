@@ -3,6 +3,20 @@ layout: page
 title: Architecture
 ---
 
+<style>
+  .arch-btns a { display: inline-block; margin: 0 .5rem .5rem 0; padding: .45rem .9rem; border-radius: 6px;
+                 background: #1f3a5f; color: #fff !important; text-decoration: none; font-size: .95rem; }
+  .arch-btns a.alt { background: #eef2f7; color: #1f3a5f !important; border: 1px solid #c9d4e2; }
+  .arch-pdf { display: block; width: 100%; height: 800px; border: 1px solid #d0d7de; border-radius: 6px; margin: .5rem 0 1rem; }
+  .arch-fig { margin: 1.25rem 0 2rem; }
+  .arch-fig img { max-width: 100%; height: auto; border: 1px solid #d0d7de; border-radius: 6px; }
+  .arch-fig figcaption { font-size: .9rem; color: #57606a; margin-top: .4rem; }
+  .arch-note { background: #f6f8fa; border-left: 4px solid #7fa3cf; padding: .6rem .9rem; margin: .8rem 0 1.2rem; }
+  .arch-old { border-left-color: #d9a3a3; }
+  .arch-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; }
+</style>
+
+
 The architecture of Escape the Geese is described in our Assessment 1 report, **Arch1.pdf**. This page holds every diagram at full size, together with the earlier versions that show how the design evolved. All diagrams use UML 2 and every class name matches the code.
 
 <p class="arch-btns">
@@ -12,16 +26,14 @@ The architecture of Escape the Geese is described in our Assessment 1 report, **
 </p>
 
 <object class="arch-pdf" data="{{ '/assets/Arch1.pdf' | relative_url }}" type="application/pdf">
-  <p><a href="{{ '/assets/pdf/Arch1.pdf' | relative_url }}">Open Arch1.pdf</a>.</p>
+  <p>Your browser can't show the PDF here. <a href="{{ '/assets/Arch1.pdf' | relative_url }}">Open Arch1.pdf</a>.</p>
 </object>
 
 **On this page:** [Final class diagram](#class-v2) · [Behavioural diagrams](#seq-v2) · [CRC cards v2](#crc-v2) · [Design evolution](#evidence) · [Diagram sources](#sources)
 
 ## Final class diagram (version 2, 12 November 2026) {#class-v2}
 
-<p><a href="{{ '/assets/arch/class-diagram-v2.pdf' | relative_url }}">Open full size (PDF, zoomable)</a> ·
-   
-
+<p><a href="{{ '/assets/arch/class-diagram-v2.pdf' | relative_url }}">Open full size (PDF, zoomable)</a></p>
 <figure class="arch-fig">
   <a href="{{ '/assets/arch/v2/class-diagram-v2.svg' | relative_url }}"><img src="{{ '/assets/arch/v2/class-diagram-v2.png' | relative_url }}" alt="Final class diagram of Escape the Geese, grouped into presentation, logic and support layers"></a>
   <figcaption>Figure 1. Final class diagram. Blue = presentation, orange = logic, green = support. HUD's read-only links to GameTimer, Score, Inventory, ExhaustionMeter and WaveManager are omitted for clarity.</figcaption>
