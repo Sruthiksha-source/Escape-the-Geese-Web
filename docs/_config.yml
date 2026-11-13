@@ -2,7 +2,7 @@ title: Escape the Geese
 description: "Engineering 1 coursework: creating a game with libGDX"
 theme: minima
 header_pages:
-  - deliverables.md
+  - implimentation.md
   - requirements.md
   - architecture.md
   - planning.md
