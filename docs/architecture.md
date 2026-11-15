@@ -66,8 +66,10 @@ The architecture of Escape the Geese is described in our Assessment 1 report, **
 ## CRC cards, version 2 (12 November 2026) {#crc-v2}
 
 <figure class="arch-fig">
-  <a href="{{ '/assets/arch/v2/crc-v2.svg' | relative_url }}"><img src="{{ '/assets/arch/v2/crc-v2.png' | relative_url }}" alt="17 CRC cards grouped by layer"></a>
-  <figcaption>17 classes in three layers. Each responsibility names the class it works with; these collaborations became the relationships in Figure 1.</figcaption>
+  <object data="{{ '/assets/arch/v2/crc-v2.pdf' | relative_url }}" type="application/pdf" width="100%" height="800">
+    <a href="{{ '/assets/arch/v2/crc-v2.pdf' | relative_url }}">CRC cards, version 2 (PDF)</a>
+  </object>
+  <figcaption>17 classes in three layers. Each responsibility names the class it works with; these collaborations became the relationships in Figures 1a and 1b. <a href="{{ '/assets/arch/v2/crc-v2.pdf' | relative_url }}">Open the PDF</a></figcaption>
 </figure>
 
 ## Design evolution {#evidence}
@@ -79,9 +81,11 @@ Our architecture went through three versions: CRC cards (October), the first cla
 <div class="arch-note arch-old"><strong>Superseded.</strong> Game held eight responsibilities, Player asked "Health bar ?", and Score ended the game at 100% of geese dispersed. Version 2 split Game into Main and four screens, replaced health with an ExhaustionMeter, and moved the win to "every wave cleared".</div>
 
 <figure class="arch-fig">
-  <a href="{{ '/assets/arch/v1/crc-v1.svg' | relative_url }}"><img src="{{ '/assets/arch/v1/crc-v1.png' | relative_url }}" alt="Six original CRC cards"></a>
+  <object data="{{ '/assets/arch/v1/CRC%20cards%20version%201.pdf' | relative_url }}" type="application/pdf" width="100%" height="700">
+    <a href="{{ '/assets/arch/v1/CRC%20cards%20version%201.pdf' | relative_url }}">CRC cards, version 1 (PDF)</a>
+  </object>
+  <figcaption>The six original CRC cards. <a href="{{ '/assets/arch/v1/CRC%20cards%20version%201.pdf' | relative_url }}">Open the PDF</a></figcaption>
 </figure>
-
 ### Class diagrams, version 1 (30 October 2026) {#class-v1}
 
 <div class="arch-note arch-old"><strong>Superseded on 12 November.</strong> Player and Goose had health, and Goose lost health from items. One Game class ran the timer, waves, events and the win check, and no relationships were drawn between classes. Replaced by Figure 1 above.</div>
